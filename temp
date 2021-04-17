@@ -1,0 +1,112 @@
+--reporte 20171119. 
+--total articulos comprados
+inkardex = Inkardex.where("user_id = ? and cantidad > ?", 29, 0 ).group(:articulo_id).sum('cantidad * valorcompra')
+
+--promedio inventario articulo
+--inventario inicial
+inkardex = Inkardex.where("user_id = ? and cantidad > ? and infecha = ?", 29, 0, '2017-07-06').group(:articulo_id).('cantidad * valorcompra')
+nota: es el total del último movimiento realizado, es decir, donde fecha creación tenga el máximo valor
+--inventario final
+inkardex = Inkardex.where("user_id = ? and cantidad > ? and infecha = ?", 29, 0, '2017-08-22').group(:articulo_id).('cantidad * valorcompra')
+nota: es el total del último movimiento realizado, es decir, donde fecha creación tenga el máximo valor
+
+
+--ventas
+inkardex = Inkardex.where("user_id = ? and cantidad < ?", 29, 0).group(:articulo_id).sum('cantidad * valorcompra')
+
+
+
+       Socket.ip_address_list.find {|a| a.ipv4? ? !(a.ipv4_private? || a.ipv4_loopback?) : !(a.pv6_sitelocal? || a.ipv6_linklocal? || a.ipv6_loopback?) }
+
+
+190.68.115:123
+       
+--20161120
+
+rails generate scaffold Compras num_factura:integer fecha_ingreso:date cantidad:integer valor_unidad:integer moneda:string valor_total:integer valor_venta:integer 
+
+
+rails g migration AddUserToCompra user:belongs_to
+
+rails g migration AddArticuloToCompra articulo:belongs_to
+
+rails g migration AddTiendaToCompra tienda:belongs_to
+
+change_column :example, :amount, :decimal, :precision => 16, :scale => 2
+
+rails generate migration change_column compras, cantidad, float
+rails generate migration change_column compras, valor_unidad, float
+rails generate migration change_column compras, valor_total, float
+rails generate migration change_column compras, valor_venta, float
+rails generate migration changeColumnType compras, num_factura, string
+
+  <th><%= @vqtotalinv, :precision => 2, :separator => ',', :delimiter => '.', :strip_insignificant_zeros => true) %></th>
+      <th></th>
+
+
+rails generate migration RemoveFieldFechaingresoFromInventario fecha_ingreso:date
+
+
+-- para bitacora
+
+http://www.giantflyingsaucer.com/blog/?p=1891
+
+Para actualizar campos:
+
+
+Inventario.where(:num_factura => nil).update_all(num_factura: '999')
+
+--bitacora
+
+Se elimina campo:
+
+rails generate migration RemoveFieldFechaingresoFromInventario fecha_ingreso:date
+
+Se eliminan relación a fecha en:
+Controlador: inventarios_controller.rb
+Model: inventario.rb
+Vistas: Ruta: /views/inventarios/
+        Archivos: form.html.erb
+                  imprimir_datos.html
+                  index.html.erb
+                  index.json.jbuilder
+                  index.xls.erb
+                  search
+                  show.html.erb
+                  show.json.jbuilder
+
+
+__________________________________________________
+201701
+__________________________________________________
+
+
+1. ----->
+
+rails generate migration RemoveFieldNumfacturaFromInventario num_factura:string
+
+2. ----->
+
+rails generate scaffold Inkardex infecha:date numdocumento:string cantidad:float existencia:float valorcompra:float moneda:string
+
+rails g migration AddUserToInkardex user:belongs_to
+
+rails g migration AddArticuloToInkardex articulo:belongs_to
+
+rails generate scaffold Outkardex outfecha:date numdocumento:string cantidad:float valorventa:float moneda:string
+
+rails g migration AddUserToOutkardex user:belongs_to
+
+rails g migration AddArticuloToOutkardex articulo:belongs_to
+
+
+___
+rake db:migrate:status 
+
+bundle exec rake db:migrate:status
+
+rake db:abort_if_pending_migrations
+
+rake db.rollback VERSION=2017010993142
+
+

@@ -1,0 +1,4 @@
+Inicio log nanducho cargue archivo conteos 2018-02-10 16:19:06 -0500
+2018-02-10,articulo1,3. Linea 1
+2018-02-10,articulo1,3. Linea 1| inventario actualizado ok. OK Se actualizaron entradas y salidas completamente 1
+Fin log nanducho cargue archivo conteos2018-02-10 16:19:06 -0500

@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+
+<h1>Listing Einvoices</h1>
+<% if can? :create, Einvoice %>
+<%= link_to 'Nuevo Einvoices', new_einvoice_path , class: "btn-primary btn-sm" %>
+<% end %>
+
+<table border="3" style="overflow-x:auto;">
+<tr align="left">
+</tr>
+<tr>
+<td colspan="2"><b>ATENCION !</b><i> Advertencia exclusiva y aplicable para Colombia! Todas las ventas con factura electrónica requieren el diligenciamiento obligatorio de los campos que se muestran a continuación, y el usuario registrado en la aplicación declara bajo la gravedad del juramento, que todos los datos son reales con respecto a los requerimientos legales de país Colombia. Así mismo, estos documentos serán en enviados vía transmisión electrónica a la Dirección de Impuestos Nacionales de Colombia (DIAN) y una copia de la factura en formato para imprimir será enviado al correo registrado. El manejo de la información será bajo responsabilidad del usuario. La(s) empresa(s) propietaria(s) de esta aplicación queda excluida del manejo dado de esta información. Actualmente se rige por la actual legislación la cual debe ser soportada por el usuario de la aplicación: Articulo 617 Factura electrónica, Ley 962 de 2005 Máquinas registradoras, Decreto 2242 de 2015 y compilado en el Decreto 1625 de 106 medios de verificación y auditoría, Ley 1607 de 2012 impuesto nacional al consumo, del estatuto tributario artículos 79-81, 512-, 512-11, Art. 615 exigencia de su exhibición, Art. 26 ley 962 de 2005, factura electrónica podrá expedir, aceptarse y archivarse, Articulo 183 Ley 1607 de 2017 inciso 684-2 instauración de tecnologías para controlar el fraude fiscal y combatir el fraude y las entidades a adoptarlas. Ley 527 de 1999 firma digital, Decreto 2364 de 2012 firma electrónica y mecanismos digitales para garantizar la autenticidad e integridad de los mensajes de datos que ayudan al control fiscal. 684-2 de estatuto tributario puede prescribir a los contribuyentes para instaurar factura electrónica. Artículo 2.1.2.1.9 Decreto 1081 de 2015, modificado decreto 1609 de agosto de 2015 y cumplimiento Art. 7 ley 1340 de 2009.</i>
+</td>
+ <td></td>
+
+
+<table class="table table-bordered table-striped">
+ <table class="table table-bordered table-striped">
+  <thead>
+    <a class="btn-primary btn-sm" href="/einvoices/new">Nuevo Einvoice</a>
+    <tr>
+      <th>Tipo Organización</th>
+      <th>No. Documento</th>
+      <th>Nombres</th>      
+      <th>Autorizacion Facturación</th>      
+      <th>Fecha inicio</th>
+      <th>Fecha fin</th>
+      <th>Código Numeración</th>
+      <th>Prefijo</th>
+      <th>Rango Numeración</th>
+      <th>Impuesto</th>
+      <th>Moneda</th>
+      <%# <td><%= einvoice.user_name </td>%>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>                              
+    <% @einvoices.each do |einvoice| %>
+    <tr>
+      <td><%= einvoice.organizationtype  %></td>
+      <td><%= einvoice.identification  %></td>
+      <td><%= einvoice.name %></td>
+      <td><%= einvoice.autorization  %></td>
+      <td><%= einvoice.init_date_allow %></td>
+      <td><%= einvoice.end_date_allow %></td>
+      <td><%= einvoice.invoice_code %></td>
+      <td><%= einvoice.prefix %></td>
+      <td><%= einvoice.from %> - <%= einvoice.to %></td>
+      <td><%= einvoice.ptax1%></td>
+      <td><%= einvoice.currency%></td>
+      <%# <td><%= einvoice.user_name </td>%>
+      <td><% if can? :update, einvoice %>
+        <button type="button" class="btn btn-success btn-sm"><%= link_to 'Editar', edit_einvoice_path(einvoice) %></button>
+   
+       </br>
+      </br>
+        <button type="button" class="btn btn-danger btn-sm"><%= link_to 'Eliminar', einvoice, method: :delete, data: { confirm: 'Esta seguro de Eliminar Facturación Electrónica?' } %></button>  
+       
+      <% end %></td>
+    <tr>
+    <% end %>
+  </tbody>
+</table>
+
+  
+
+
+                
+         

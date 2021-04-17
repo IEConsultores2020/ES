@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listado Articulos</h1>
+
+<table>
+  <tbody>
+    <% @articulos.each do |articulo| %>
+      <tr><td align="center"><%= barcode_image_uri(@articulo.nombre) %>
+             <img src = "http://190.68.115:123:3000/barcode_images/Code39_#{articulo.nombre}.png"  width="120" height="20" /><br>
+             <font style="font-size:8px" ><%= "#{articulo.nombre}" %></font>
+          </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

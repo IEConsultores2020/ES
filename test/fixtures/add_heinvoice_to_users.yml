@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  heinvoice: MyString
+  num: 
+  id: 
+  publication: 2019-05-16
+  citizenship: MyString
+  allname: MyText
+  state: MyString
+  email: MyString
+  expedition: 2019-05-16
+  grossvalue: 
+  tax: 
+
+two:
+  heinvoice: MyString
+  num: 
+  id: 
+  publication: 2019-05-16
+  citizenship: MyString
+  allname: MyText
+  state: MyString
+  email: MyString
+  expedition: 2019-05-16
+  grossvalue: 
+  tax: 

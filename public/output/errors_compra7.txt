@@ -1,0 +1,4 @@
+Inicio log nanducho cargue archivo compras 2017-07-07 00:56:44 -0500
+2017-07-06,FAC015,001FTV,1. Linea 1=> No se encuentra el articulo
+2017-07-06,FAC015,FTV02,1. Linea 2=> No se encuentra el articulo
+Fin log nanducho cargue archivo comrpas2017-07-07 00:56:44 -0500

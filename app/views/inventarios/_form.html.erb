@@ -1,0 +1,39 @@
+<%= form_for(@inventario) do |f| %>
+  <% if @inventario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@inventario.errors.count, "error") %> prohibited this inventario from being saved:</h2>
+
+      <ul>
+      <% @inventario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :moneda %><br>
+    <%= f.text_field :moneda, include_blank: false, :default => 'COP' %>
+  </div>    
+  <div class="field">
+    <%= f.label :articulo_id %><br>    
+    <%= f.collection_select :articulo_id, Articulo.where(user_id: current_user.id).order(:nombre), :id, :name_with_desc, 
+        include_blank: false %>
+  </div>  
+  <div class="field">
+    <%= f.label :cantidad_integer %><br>
+    <%= f.number_field :cantidad_integer, :default => 0, :step => 1%>
+  </div>
+  <div class="field">
+    <%= f.label :valor_unidad %><br>
+    <%= f.number_field :valor_unidad, :default => 0 %>
+  </div>
+  <div class="field">
+    <%= f.label :valor_venta %><br>
+    <%= f.number_field :valor_venta, :default => 0 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+

@@ -1,0 +1,61 @@
+<header class="navbar navbar-fixed-top navbar-inverse">    
+  <div id="hcontainer" class="container">
+    <nav>      
+      <% if user_signed_in? %>        
+        <div align="right"> Esta conectado como: <%= current_user.email %> </div>      
+        <nav>
+          <ul class="nav navbar-nav navbar-left">
+            <li><%= link_to "Inicio", root_path %></li> 
+
+            <% if current_user.seller? %>               
+               <li><%= link_to "Factura Electrónica", einvoices_path %></li>
+              <li><%= link_to "Factura de Venta", saleheaders_path %></i> 
+               <li><%= link_to "Articulos", articulos_path %></li>
+               <li><%= link_to "Modelos", modelos_path %></li>  
+               <li><%= link_to "Componentes", componentes_path %></li>  
+               <li><%= link_to "Unidades Medida", medidas_path %></li>                 
+               <li><%= link_to "Inventarios", inventarios_path %></li> 
+               <li><%= link_to "Compras", compras_path %></li> 
+               <li><%= link_to "Conteos", conteos_path %></li>  
+               <li><%= link_to "Rotacion de inventarios", rotacion_inventarios_path %></li>              
+            <% end %>
+
+
+            <% if current_user.admin? %>               
+               <li><%= link_to "Usuarios", users_path %></li> 
+               <li><%= link_to "Factura Electrónica", einvoices_path %></li> 
+               <li><%= link_to "Factura De Venta", saleheaders_path %></i>   
+               <li><%= link_to "Articulos", articulos_path %></li>                         
+               <li><%= link_to "Modelos", modelos_path %></li>  
+               <li><%= link_to "Componentes", componentes_path %></li>  
+               <li><%= link_to "Unidades Medida", medidas_path %></li>  
+               <li><%= link_to "Inventarios", inventarios_path %></li> 
+               <li><%= link_to "Compras", compras_path %></li> 
+               <li><%= link_to "Conteos", conteos_path %></li>   
+               <li><%= link_to "Rotacion de inventarios", rotacion_inventarios_path %></li> 
+               <li><%= link_to "Empresas", empresas_path %></li>
+            <% end %>
+
+
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">            
+            <li><%= link_to "Edit profile" , edit_user_registration_path %> </li>
+            <li><%= link_to "Sign Out (Salir)", destroy_user_session_path, :method => :get %></li>
+          </ul>
+        </nav>
+      <% else %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Sign up (Suscribirse)", new_user_registration_path%> </li>
+          <li><%= link_to "sign in (Ingresar)", new_user_session_path %></li>
+          </ul>
+        </nav>
+      <% end %>
+       
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, id: "flash_#{name}" %>
+      <% end %>
+    </nav>
+  </div>
+</header>

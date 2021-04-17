@@ -1,0 +1,193 @@
+[ 2016-09-22 22:53:54.2523 29296/7f101460f7e0 age/Wat/Main.cpp:1264 ]: Starting PassengerAgent watchdog...
+[ 2016-09-22 22:53:54.2603 29299/7f092a9977e0 age/Hel/Main.cpp:944 ]: Starting PassengerAgent server...
+[ 2016-09-22 22:53:54.2605 29299/7f092a9977e0 age/Hel/Main.cpp:237 ]: PassengerAgent server running in multi-application mode.
+[ 2016-09-22 22:53:54.2625 29299/7f092a9977e0 age/Hel/Main.cpp:698 ]: PassengerAgent server online, PID 29299
+[ 2016-09-22 22:53:54.2673 29308/7f611e9967e0 age/Log/Main.cpp:442 ]: Starting PassengerAgent logger...
+[ 2016-09-22 22:53:54.2680 29308/7f611e9967e0 age/Log/Main.cpp:323 ]: PassengerAgent logger online, PID 29308
+App 29332 stdout: 
+App 29350 stdout: 
+App 29431 stdout: 
+App 29438 stdout: 
+App 29447 stdout: 
+App 29454 stdout: 
+App 29462 stdout: 
+
+[ 2016-09-22 22:54:50.0719 29299/7f0929ec1700 age/Hel/Main.cpp:508 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-09-22 22:54:50.0720 29299/7f092a9977e0 age/Hel/Main.cpp:867 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-09-22 22:54:50.0721 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29350, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:54:50.0769 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29431, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:54:50.0769 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29438, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:54:50.0769 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29447, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:54:50.0770 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29454, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:54:50.0770 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29462, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:54:50.0773 29299/7f0928abf700 Ser/Server.h:455 ]: [AdminServer] Shutdown finished
+[ 2016-09-22 22:54:50.0774 29299/7f0929ec1700 Ser/Server.h:455 ]: [ServerThr.1] Shutdown finished
+[ 2016-09-22 22:54:50.0774 29299/7f09294c0700 Ser/Server.h:455 ]: [ServerThr.2] Shutdown finished
+[ 2016-09-22 22:54:50.0846 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29350, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:54:50.0848 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29431, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:54:50.0848 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29438, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:54:50.0848 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29447, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:54:50.0848 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29454, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:54:50.0849 29299/7f092a9977e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29462, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+
+[ 2016-09-22 22:54:50.1043 29308/7f611e705700 age/Log/Main.cpp:349 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-09-22 22:54:50.1044 29308/7f611e9967e0 age/Log/Main.cpp:411 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-09-22 22:54:50.1045 29308/7f611e705700 Ser/Server.h:455 ]: [LoggerAdminServer] Shutdown finished
+[ 2016-09-22 22:54:50.1052 29308/7f611e9967e0 age/Log/Main.cpp:436 ]: PassengerAgent logger shutdown finished
+[ 2016-09-22 22:54:51.1244 29299/7f092a9977e0 age/Hel/Main.cpp:929 ]: PassengerAgent server shutdown finished
+[ 2016-09-22 22:54:58.1292 29508/7f0105ed47e0 age/Wat/Main.cpp:1264 ]: Starting PassengerAgent watchdog...
+[ 2016-09-22 22:54:58.1364 29513/7f1f3ede37e0 age/Hel/Main.cpp:944 ]: Starting PassengerAgent server...
+[ 2016-09-22 22:54:58.1366 29513/7f1f3ede37e0 age/Hel/Main.cpp:237 ]: PassengerAgent server running in multi-application mode.
+[ 2016-09-22 22:54:58.1456 29513/7f1f3ede37e0 age/Hel/Main.cpp:698 ]: PassengerAgent server online, PID 29513
+[ 2016-09-22 22:54:58.1506 29522/7f5f0c9fd7e0 age/Log/Main.cpp:442 ]: Starting PassengerAgent logger...
+[ 2016-09-22 22:54:58.1512 29522/7f5f0c9fd7e0 age/Log/Main.cpp:323 ]: PassengerAgent logger online, PID 29522
+App 29547 stdout: 
+App 29565 stdout: 
+
+[ 2016-09-22 22:55:21.2625 29513/7f1f3e30d700 age/Hel/Main.cpp:508 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-09-22 22:55:21.2626 29513/7f1f3ede37e0 age/Hel/Main.cpp:867 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-09-22 22:55:21.2626 29513/7f1f3ede37e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29565, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+[ 2016-09-22 22:55:21.2627 29513/7f1f3d90c700 Ser/Server.h:455 ]: [ServerThr.2] Shutdown finished
+[ 2016-09-22 22:55:21.2630 29513/7f1f3e30d700 Ser/Server.h:455 ]: [ServerThr.1] Shutdown finished
+[ 2016-09-22 22:55:21.2631 29513/7f1f3cf0b700 Ser/Server.h:455 ]: [AdminServer] Shutdown finished
+[ 2016-09-22 22:55:21.2632 29513/7f1f3ede37e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 29565, application /home/ieconsultores/Railsapps/rd2/public (development)#default
+
+[ 2016-09-22 22:55:21.2712 29522/7f5f07fff700 age/Log/Main.cpp:349 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-09-22 22:55:21.2713 29522/7f5f0c9fd7e0 age/Log/Main.cpp:411 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-09-22 22:55:21.2714 29522/7f5f07fff700 Ser/Server.h:455 ]: [LoggerAdminServer] Shutdown finished
+[ 2016-09-22 22:55:21.2715 29522/7f5f0c9fd7e0 age/Log/Main.cpp:436 ]: PassengerAgent logger shutdown finished
+[ 2016-09-22 22:55:21.4662 29513/7f1f3ede37e0 age/Hel/Main.cpp:929 ]: PassengerAgent server shutdown finished
+2016/09/25 21:46:29 [emerg] 4931#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2016/09/25 21:46:29 [emerg] 4931#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2016/09/25 21:46:29 [emerg] 4931#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2016/09/25 21:46:29 [emerg] 4931#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2016/09/25 21:46:29 [emerg] 4931#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2016/09/25 21:46:29 [emerg] 4931#0: still could not bind()
+[ 2017-04-25 23:17:29.5779 4234/7fd5215487e0 age/Wat/Main.cpp:1264 ]: Starting PassengerAgent watchdog...
+[ 2017-04-25 23:17:29.5951 4237/7f0b948927e0 age/Hel/Main.cpp:944 ]: Starting PassengerAgent server...
+[ 2017-04-25 23:17:29.5953 4237/7f0b948927e0 age/Hel/Main.cpp:237 ]: PassengerAgent server running in multi-application mode.
+[ 2017-04-25 23:17:29.5974 4237/7f0b948927e0 age/Hel/Main.cpp:698 ]: PassengerAgent server online, PID 4237
+[ 2017-04-25 23:17:29.6021 4246/7f5f0649d7e0 age/Log/Main.cpp:442 ]: Starting PassengerAgent logger...
+[ 2017-04-25 23:17:29.6029 4246/7f5f0649d7e0 age/Log/Main.cpp:323 ]: PassengerAgent logger online, PID 4246
+App 4270 stdout: 
+App 4310 stdout: 
+
+[ 2017-04-25 23:18:02.3942 4237/7f0b8f5bd700 age/Hel/Main.cpp:508 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2017-04-25 23:18:02.3943 4237/7f0b948927e0 age/Hel/Main.cpp:867 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2017-04-25 23:18:02.3943 4237/7f0b948927e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 4310, application /home/ieconsultores/Railsapps/es/public (development)#default
+[ 2017-04-25 23:18:02.3944 4237/7f0b8ebbc700 Ser/Server.h:455 ]: [ServerThr.2] Shutdown finished
+[ 2017-04-25 23:18:02.3946 4237/7f0b8f5bd700 Ser/Server.h:455 ]: [ServerThr.1] Shutdown finished
+[ 2017-04-25 23:18:02.3947 4237/7f0b8e1bb700 Ser/Server.h:455 ]: [AdminServer] Shutdown finished
+[ 2017-04-25 23:18:02.3948 4237/7f0b948927e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 4310, application /home/ieconsultores/Railsapps/es/public (development)#default
+
+[ 2017-04-25 23:18:02.3998 4246/7f5f0620c700 age/Log/Main.cpp:349 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2017-04-25 23:18:02.3999 4246/7f5f0649d7e0 age/Log/Main.cpp:411 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2017-04-25 23:18:02.3999 4246/7f5f0620c700 Ser/Server.h:455 ]: [LoggerAdminServer] Shutdown finished
+[ 2017-04-25 23:18:02.4001 4246/7f5f0649d7e0 age/Log/Main.cpp:436 ]: PassengerAgent logger shutdown finished
+[ 2017-04-25 23:18:02.6075 4237/7f0b948927e0 age/Hel/Main.cpp:929 ]: PassengerAgent server shutdown finished
+2019/03/20 14:28:03 [emerg] 17213#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:28:03 [emerg] 17213#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:28:03 [emerg] 17213#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:28:03 [emerg] 17213#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:28:03 [emerg] 17213#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:28:03 [emerg] 17213#0: still could not bind()
+2019/03/20 14:31:14 [emerg] 17532#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:31:14 [emerg] 17532#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:31:14 [emerg] 17532#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:31:14 [emerg] 17532#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:31:14 [emerg] 17532#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:31:14 [emerg] 17532#0: still could not bind()
+2019/03/20 14:32:25 [emerg] 17579#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:32:25 [emerg] 17579#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:32:25 [emerg] 17579#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:32:25 [emerg] 17579#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:32:25 [emerg] 17579#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/20 14:32:25 [emerg] 17579#0: still could not bind()
+2019/03/29 07:08:17 [emerg] 31452#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/29 07:08:17 [emerg] 31452#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/29 07:08:17 [emerg] 31452#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/29 07:08:17 [emerg] 31452#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/29 07:08:17 [emerg] 31452#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/29 07:08:17 [emerg] 31452#0: still could not bind()
+2019/03/29 07:08:27 [emerg] 31468#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/29 07:08:27 [emerg] 31468#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/29 07:08:27 [emerg] 31468#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/29 07:08:27 [emerg] 31468#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/29 07:08:27 [emerg] 31468#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/03/29 07:08:27 [emerg] 31468#0: still could not bind()
+[ N 2019-04-05 08:22:29.4183 32487/T1 age/Wat/WatchdogMain.cpp:1297 ]: Starting Passenger watchdog...
+[ N 2019-04-05 08:22:29.4807 32490/T1 age/Cor/CoreMain.cpp:1200 ]: Starting Passenger core...
+[ N 2019-04-05 08:22:29.4809 32490/T1 age/Cor/CoreMain.cpp:250 ]: Passenger core running in multi-application mode.
+[ N 2019-04-05 08:22:29.4975 32490/T1 age/Cor/CoreMain.cpp:935 ]: Passenger core online, PID 32490
+[ E 2019-04-05 08:22:33.1491 32490/T5 age/Cor/SecurityUpdateChecker.h:505 ]: Security update check failed: HTTP 500 while connecting to https://securitycheck.phusionpassenger.com/v1/check.json (if this error persists check your connection security or try upgrading Passenger) (next check in 24 hours)
+
+[ N 2019-04-05 08:34:18.5360 32490/T7 age/Cor/CoreMain.cpp:614 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-04-05 08:34:18.5361 32490/T1 age/Cor/CoreMain.cpp:1112 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-04-05 08:34:18.5361 32490/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 32562, application /home/ieconsultores/Railsapps/es (development)
+[ N 2019-04-05 08:34:18.5362 32490/T7 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-04-05 08:34:18.5363 32490/T7 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2019-04-05 08:34:18.5364 32490/T9 Ser/Server.h:903 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-04-05 08:34:18.5364 32490/T9 Ser/Server.h:559 ]: [ServerThr.2] Shutdown finished
+[ N 2019-04-05 08:34:18.5365 32490/Tb Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-04-05 08:34:18.5366 32490/Tb Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2019-04-05 08:34:18.5367 32490/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 32562, application /home/ieconsultores/Railsapps/es (development)
+[ N 2019-04-05 08:34:18.7706 32490/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
+[ N 2019-04-05 08:37:53.1460 1253/T1 age/Wat/WatchdogMain.cpp:1297 ]: Starting Passenger watchdog...
+[ N 2019-04-05 08:37:53.1700 1256/T1 age/Cor/CoreMain.cpp:1200 ]: Starting Passenger core...
+[ N 2019-04-05 08:37:53.1702 1256/T1 age/Cor/CoreMain.cpp:250 ]: Passenger core running in multi-application mode.
+[ N 2019-04-05 08:37:53.1797 1256/T1 age/Cor/CoreMain.cpp:935 ]: Passenger core online, PID 1256
+[ E 2019-04-05 08:37:56.1852 1256/T5 age/Cor/SecurityUpdateChecker.h:505 ]: Security update check failed: HTTP 500 while connecting to https://securitycheck.phusionpassenger.com/v1/check.json (if this error persists check your connection security or try upgrading Passenger) (next check in 24 hours)
+
+[ N 2019-04-05 08:39:19.3269 1256/T8 age/Cor/CoreMain.cpp:614 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-04-05 08:39:19.3270 1256/T1 age/Cor/CoreMain.cpp:1112 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-04-05 08:39:19.3270 1256/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 1331, application /home/ieconsultores/Railsapps/es (development)
+[ N 2019-04-05 08:39:19.3271 1256/T8 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-04-05 08:39:19.3271 1256/T8 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2019-04-05 08:39:19.3272 1256/Ta Ser/Server.h:903 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-04-05 08:39:19.3272 1256/Ta Ser/Server.h:559 ]: [ServerThr.2] Shutdown finished
+[ N 2019-04-05 08:39:19.3273 1256/Tc Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-04-05 08:39:19.3273 1256/Tc Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2019-04-05 08:39:19.3274 1256/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 1331, application /home/ieconsultores/Railsapps/es (development)
+[ N 2019-04-05 08:39:19.5774 1256/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
+[ N 2019-06-26 21:22:53.9249 4120/T1 age/Wat/WatchdogMain.cpp:1297 ]: Starting Passenger watchdog...
+[ N 2019-06-26 21:22:53.9553 4123/T1 age/Cor/CoreMain.cpp:1200 ]: Starting Passenger core...
+[ N 2019-06-26 21:22:53.9554 4123/T1 age/Cor/CoreMain.cpp:250 ]: Passenger core running in multi-application mode.
+[ N 2019-06-26 21:22:53.9652 4123/T1 age/Cor/CoreMain.cpp:935 ]: Passenger core online, PID 4123
+[ N 2019-06-26 21:22:56.9821 4123/T5 age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+[ W 2019-06-26 21:23:40.0173 4123/T3 age/Cor/App/Poo/AnalyticsCollection.cpp:102 ]: Process (pid=4280, group=/home/ieconsultores/Railsapps/es (development)) no longer exists! Detaching it from the pool.
+[ N 2019-06-26 21:23:40.0174 4123/T3 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 4280, application /home/ieconsultores/Railsapps/es (development)
+
+[ N 2019-06-26 21:29:22.6387 4123/T7 age/Cor/CoreMain.cpp:614 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-06-26 21:29:22.6388 4123/T1 age/Cor/CoreMain.cpp:1112 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-06-26 21:29:22.6388 4123/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 4537, application /home/ieconsultores/Railsapps/es (development)
+[ N 2019-06-26 21:29:22.6389 4123/T7 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-06-26 21:29:22.6390 4123/T7 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2019-06-26 21:29:22.6390 4123/T9 Ser/Server.h:903 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-06-26 21:29:22.6390 4123/T9 Ser/Server.h:559 ]: [ServerThr.2] Shutdown finished
+[ N 2019-06-26 21:29:22.6392 4123/Tb Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-06-26 21:29:22.6392 4123/Tb Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2019-06-26 21:29:22.6393 4123/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 4537, application /home/ieconsultores/Railsapps/es (development)
+[ N 2019-06-26 21:29:22.8741 4123/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
+[ N 2019-07-07 06:18:40.5661 3942/T1 age/Wat/WatchdogMain.cpp:1297 ]: Starting Passenger watchdog...
+[ N 2019-07-07 06:18:40.6020 3945/T1 age/Cor/CoreMain.cpp:1200 ]: Starting Passenger core...
+[ N 2019-07-07 06:18:40.6027 3945/T1 age/Cor/CoreMain.cpp:250 ]: Passenger core running in multi-application mode.
+[ N 2019-07-07 06:18:40.6307 3945/T1 age/Cor/CoreMain.cpp:935 ]: Passenger core online, PID 3945
+[ N 2019-07-07 06:18:44.3938 3945/T5 age/Cor/SecurityUpdateChecker.h:517 ]: Security update check: no update found (next check in 24 hours)
+
+[ N 2019-07-07 06:18:55.3557 3945/T8 age/Cor/CoreMain.cpp:614 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-07-07 06:18:55.3558 3945/T1 age/Cor/CoreMain.cpp:1112 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-07-07 06:18:55.3558 3945/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 4016, application /home/ieconsultores/Railsapps/es (development)
+[ N 2019-07-07 06:18:55.3558 3945/T8 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-07-07 06:18:55.3559 3945/T9 Ser/Server.h:903 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-07-07 06:18:55.3559 3945/T8 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2019-07-07 06:18:55.3559 3945/T9 Ser/Server.h:559 ]: [ServerThr.2] Shutdown finished
+[ N 2019-07-07 06:18:55.3560 3945/Tc Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-07-07 06:18:55.3560 3945/Tc Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2019-07-07 06:18:55.3561 3945/T1 age/Cor/CoreMain.cpp:1026 ]: Checking whether to disconnect long-running connections for process 4016, application /home/ieconsultores/Railsapps/es (development)
+[ N 2019-07-07 06:18:55.6965 3945/T1 age/Cor/CoreMain.cpp:1185 ]: Passenger core shutdown finished
+2019/07/08 08:35:42 [emerg] 13257#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/07/08 08:35:42 [emerg] 13257#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/07/08 08:35:42 [emerg] 13257#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/07/08 08:35:42 [emerg] 13257#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/07/08 08:35:42 [emerg] 13257#0: bind() to 0.0.0.0:3001 failed (98: Address already in use)
+2019/07/08 08:35:42 [emerg] 13257#0: still could not bind()

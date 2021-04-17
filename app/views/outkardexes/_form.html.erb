@@ -1,0 +1,37 @@
+<%= form_for(@outkardex) do |f| %>
+  <% if @outkardex.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@outkardex.errors.count, "error") %> prohibited this outkardex from being saved:</h2>
+
+      <ul>
+      <% @outkardex.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :outfecha %><br>
+    <%= f.date_select :outfecha %>
+  </div>
+  <div class="field">
+    <%= f.label :numdocumento %><br>
+    <%= f.text_field :numdocumento %>
+  </div>
+  <div class="field">
+    <%= f.label :cantidad %><br>
+    <%= f.text_field :cantidad %>
+  </div>
+  <div class="field">
+    <%= f.label :valorventa %><br>
+    <%= f.text_field :valorventa %>
+  </div>
+  <div class="field">
+    <%= f.label :moneda %><br>
+    <%= f.text_field :moneda %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

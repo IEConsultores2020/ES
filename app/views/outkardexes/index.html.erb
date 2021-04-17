@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Outkardexes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outfecha</th>
+      <th>Numdocumento</th>
+      <th>Cantidad</th>
+      <th>Valorventa</th>
+      <th>Moneda</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @outkardexes.each do |outkardex| %>
+      <tr>
+        <td><%= outkardex.outfecha %></td>
+        <td><%= outkardex.numdocumento %></td>
+        <td><%= outkardex.cantidad %></td>
+        <td><%= outkardex.valorventa %></td>
+        <td><%= outkardex.moneda %></td>
+        <td><%= link_to 'Show', outkardex %></td>
+        <td><%= link_to 'Edit', edit_outkardex_path(outkardex) %></td>
+        <td><%= link_to 'Destroy', outkardex, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Outkardex', new_outkardex_path %>

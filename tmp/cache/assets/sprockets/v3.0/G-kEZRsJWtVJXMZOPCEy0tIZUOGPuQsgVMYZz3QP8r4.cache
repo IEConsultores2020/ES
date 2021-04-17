@@ -1,0 +1,9 @@
+I"À(function() {
+  jQuery(function() {
+    return $('#compra_articulo_nombre').autocomplete({
+      source: $('#compra_articulo_nombre').data('autocomplete-source')
+    });
+  });
+
+}).call(this);
+:ET

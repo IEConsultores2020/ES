@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Entradas / Salidas</title>
+  <title><%= h(yield(:title) || "Untitled") %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= stylesheet_link_tag    'mobile' if mobile_device? %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+   <%= render 'layouts/shim' %>
+  <%= yield(:head) %>
+</head>
+<body>  
+  <header class="navbar navbar-fixed-top navbar-inverse">
+  <%= render 'layouts/header' %>
+  <div id="container"> 
+    
+ 
+
+
+	
+ 
+	
+	<%#= debug(params) if Rails.env.development? %>
+
+  <%= yield %>
+   
+    
+    </br>
+    
+
+  <%= render 'layouts/footer' %>
+</body>
+

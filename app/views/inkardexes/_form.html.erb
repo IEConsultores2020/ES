@@ -1,0 +1,41 @@
+<%= form_for(@inkardex) do |f| %>
+  <% if @inkardex.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@inkardex.errors.count, "error") %> prohibited this inkardex from being saved:</h2>
+
+      <ul>
+      <% @inkardex.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :infecha %><br>
+    <%= f.date_select :infecha %>
+  </div>
+  <div class="field">
+    <%= f.label :numdocumento %><br>
+    <%= f.text_field :numdocumento %>
+  </div>
+  <div class="field">
+    <%= f.label :cantidad %><br>
+    <%= f.text_field :cantidad %>
+  </div>
+  <div class="field">
+    <%= f.label :existencia %><br>
+    <%= f.text_field :existencia %>
+  </div>
+  <div class="field">
+    <%= f.label :valorcompra %><br>
+    <%= f.text_field :valorcompra %>
+  </div>
+  <div class="field">
+    <%= f.label :moneda %><br>
+    <%= f.text_field :moneda %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

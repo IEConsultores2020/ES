@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+
+<table>
+
+  <tbody>
+    <% @articulos.each do |articulo| %>
+      <tr>
+        <%= barcode_image_uri(@articulo.nombre) %>
+        <img src = "http://190.68.115:123:3000/barcode_images/Code39_#{articulo.nombre}.png" />
+        <td><%= articulo.nombre %></td>
+        <td><%= articulo.descripcion %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

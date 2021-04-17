@@ -1,0 +1,23 @@
+Cuidado. Borré base de datos.
+
+Se restaura copia del 30 de octubre en es y se copian archivos modificados.
+
+Se hace un nuevo backup.
+
+Tipos de datos equivalentes con diferentes bases de datos.
+
+http://blog.ifyouseewendy.com/blog/2015/08/10/data-types-in-rails/
+
+Backup en es:
+
+http://luanotes.com/posts/auto-backup-database-in-rails-application
+
+No entendí.
+
+Ver archivos modificados antes de determinada fecha:
+
+http://www.cyberciti.biz/faq/howto-finding-files-by-date/
+
+Se adicionan los campos a las tablas conteos y kardexes
+
+

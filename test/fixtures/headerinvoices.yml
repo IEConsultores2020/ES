@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  add_num: 
+  id: 
+  publication: 2019-05-16
+  citizenship: MyString
+  allname: MyText
+  state: MyString
+  email: MyString
+  expedition: 2019-05-16
+  grossvalue: 
+  tax: 
+
+two:
+  add_num: 
+  id: 
+  publication: 2019-05-16
+  citizenship: MyString
+  allname: MyText
+  state: MyString
+  email: MyString
+  expedition: 2019-05-16
+  grossvalue: 
+  tax: 

@@ -1,0 +1,13 @@
+<tbody>   
+  <tr>
+   <td><%= articulo.inkardex.infecha %></td>
+   <td><%= @inkardex.numdocumento %></td>
+   <td><%= inkardex.cantidad %></td>  
+   <td><%= inkardex.existencia %></td>
+   <td><%= inkardex.articulo.nombre %></td> 
+   <td><%= inkardex.articulo.impuesto %></td> 
+   <td><%= link_to 'Show', kardex, class: "btn btn-default btn-sm" %></td>
+   <td><%= link_to 'Edit', edit_inkardex_path(inkardex), class: "btn btn-default btn-sm" %></td>
+   <td><%= button_to 'Delete', inkardex, class: "btn btn-danger btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>  
+</tbody>

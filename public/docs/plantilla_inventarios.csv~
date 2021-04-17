@@ -1,0 +1,2 @@
+num_factura,fecha_ingreso,articulo_nombre,valor_unidad,cantidad_integer,valor_venta
+FACT001,2016-12-28,10PDBL50G,3200,0,0

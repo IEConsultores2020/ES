@@ -1,0 +1,87 @@
+<p id="notice"><%= notice %></p>
+<h1>Información de la Factura de Venta</h1>
+  <div class="container-fluid">
+    <div class="row" style="background-color:lightcyan">
+    	<div class="col-md-5">
+        	 <p><strong> Numero Factura:</strong>
+        	    <%= @saleheader.invoice_num   %>  
+	            <strong>| Fecha expedicion:</strong>
+	            <%= @saleheader.expeditionDate %>
+	            <strong>| Estado</strong>
+	            <%= @saleheader.state %></p>
+	        <p>  DATOS DEL CLIENTE </p>
+	        <p><strong> Tipo Identificacion:</strong>
+	           <%= @saleheader.typeID %>
+	           <strong> | Numero:</strong>
+	           <%= @saleheader.num_id %>        
+	           <strong> | Nacionalidad:</strong>
+	           <%= @saleheader.citizenship %>
+	        </p>   
+	        <p><strong> Nombre:</strong>
+	           <%= @saleheader.allname%>
+	           <strong> | email:</strong>
+	           <%= @saleheader.email %>
+	        </p>	    
+            <p> TOTALES FACTURA:  
+		    <strong> Valor_bruto <%= @saleheader.grossvalue %> </strong>  
+		    <strong> | Valor Impuesto <%= @saleheader.tax %> </strong>
+		    <strong> | Valor neto <%= @saleheader.netvalue %>
+	        </strong>
+ 		</div>
+ 	</div>
+
+
+
+	<h1>Detalles</h1>
+	 <table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Num</th>
+      <th>Articulo</th>
+      <th>Valor Unidad</th>
+      <th>Cantidad</th>
+      <th>Total</th>
+      <th>% Descuento</th>
+       
+      <th colspan="3"></th>
+     </tr>
+  </thead>
+    <ul>
+    	
+    <% if @saleheader.saledetails.any? %>
+      
+  
+       <% @saleheader.saledetails.each do |saledetail| %>
+      <td><%= saledetail.line %></td>
+      <td><%= saledetail.value %></td>
+      <td><%= saledetail.quantity%></td>
+      <td><%= saledetail.total %></td>
+      <td><%= saledetail.discount_percent %></td>
+      <td><%= saledetail.discountpercent %></td>
+      <td><%= saledetail.saleheader_id %></td>
+     <td><%= saledetail.user_id %></td>
+     <td><%= saledetail.articulo_id %></td>
+      
+        
+    <tr>      
+        
+       
+  
+   </tr>
+       <% end %>
+    <% end %>
+    </div>
+
+  </tbody>
+</table>
+    
+    <%= link_to 'Edit', edit_saleheader_path(@saleheader), class: "btn-primary btn-sm" %> | <%= link_to 'Back', saleheader_path,  class: "btn-primary btn-sm" %>
+      <p>No hay detalles</p>
+  
+
+
+   
+    
+        
+	       
+			    

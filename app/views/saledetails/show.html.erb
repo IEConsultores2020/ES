@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Número_de_linea_en_la_factura:</strong>
+  <%= @saledetail.line %>
+</p>
+
+<p>
+  <strong>Articulo:</strong>
+  <%= @saledetail.articulo_id%>
+</p>
+
+<p>
+  <strong>value :</strong>
+  <%= @saledetail.value  %>
+
+</p>
+
+<p>
+  <strong>total:</strong>
+  <%= @saledetail.total %>
+</p>
+
+<p>
+  <strong>discountpercent:</strong>
+  <%= @saledetail.discountpercent%>
+  </p>
+
+
+<%= link_to 'Edit', edit_saledetail_path(@saledetail) %> |
+<%= link_to 'Back', saledetails_path %>

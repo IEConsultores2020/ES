@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Numero Factura:</strong>
+  <%= @saleheader.invoice_num %>
+</p>
+<p>
+  <strong>Fecha De Expedición:</strong>
+  <%= @saleheader.expeditionDate %>
+</p>
+<p>
+  <strong>Estado:</strong>
+  <%= @saleheader.state %>
+</p>
+<p><strong> Estado DIAN:</strong>
+<%= @saleheader.num %></p>
+
+<p> DATOS DEL CLIENTE </p>
+<p>
+  <strong>Tipo y Nùmero de Identificación:</strong>
+  <%= @saleheader.typeID %>
+  <%= @saleheader.num_id%>
+</p>
+<p>
+  <strong>Nacionalidad :</strong>
+  <%= @saleheader.citizenship  %>
+</p>
+<p>
+  <strong>Nombre completo Organizacion:</strong>
+  <%= @saleheader.allname %>
+</p>
+<p>
+  <strong>email:</strong>
+  <%= @saleheader.email %>
+</p>
+<p>
+  <strong>Valor Bruto:</strong>
+  <%= @saleheader.grossvalue%>
+</p>
+
+<p>
+  <strong>Impuesto:</strong>
+  <%= @saleheader.tax %>
+</p>
+<p>
+  <strong>Valor Neto:</strong>
+  <%= @saleheader.netvalue %>
+</p>
+
+<%= link_to 'Edit', edit_saleheader_path(@saleheader) %> |
+<%= link_to 'Back', saleheaders_path %>

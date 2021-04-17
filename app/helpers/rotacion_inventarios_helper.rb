@@ -1,0 +1,2 @@
+module RotacionInventariosHelper
+end

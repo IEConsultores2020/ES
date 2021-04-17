@@ -1,0 +1,67 @@
+<%= form_for(@einvoice) do |f| %>
+  <% if @einvoice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@einvoice.errors.count, "error") %> prohibited this einvoice from being saved:</h2>
+
+      <ul>
+      <% @einvoice.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :Organización  %><br>    
+    <%= f.select(:organizationtype ,[['Persona','Persona'],['Empresa','Empresa']]) %>
+  </div>
+  <div class="field">
+    <%= f.label :identificación  %><br>
+    <%= f.text_field :identification  %>
+  </div>  
+  
+   <div class="field">
+    <%= f.label :Nombres_Apellidos %><br>
+    <%= f.text_field :name %>
+  </div>  
+  <div class="field">
+    <%= f.label :Autorizacion %><br>
+    <%= f.text_field :autorization%>
+  </div>  
+  <div class="field">
+    <%= f.label :Fecha_Inicio %><br>
+    <%= f.date_field :init_date_allow%>
+  </div>
+  <div class="field">
+    <%= f.label :Fecha_Fin %><br>
+    <%= f.date_field :end_date_allow %>
+  </div>
+  <div class="field">
+    <%= f.label :Código_Facturación %><br>
+    <%= f.text_field :invoice_code %>
+  </div>
+  <div class="field">
+    <%= f.label :prefijo %><br>
+    <%= f.text_field :prefix %>
+  </div>  
+  <div class="field">
+    <%= f.label :rango_facturacion %><br>
+    <%= f.text_field :from %> - <%= f.text_field :to %>
+  </div>    
+  <div class="field">
+     <%= f.label :impuesto_aplicable%><br>
+     <%= f.select(:ptax1,[['IVAO%','0'],['IVA19%','0.19'],['IVA5%','0.4']]) %>
+  </div>     
+  <div class="field">
+    <%= f.label :Moneda %><br>
+    <%= f.select(:currency ,[['COP','COP'],['EURO','EURO'],['USD','USD']]) %>
+  </div>
+
+  </br>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

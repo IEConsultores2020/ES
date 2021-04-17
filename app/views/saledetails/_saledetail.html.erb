@@ -1,0 +1,12 @@
+<tbody>   
+  <tr>
+   <td><%= saledetail.articulo_id %></td>
+   <td><%= saledetail.line %></td>
+   <td><%= saledetail.value %></td>  
+   <td><%= saledetail.discountpercent %></td>
+   <td><%= saledetail.total %></td> 
+   <td><%= link_to 'Show', saledetail, class: "btn btn-default btn-sm" %></td>
+   <td><%= link_to 'Edit', edit_saledetail_path(saledetail), class: "btn btn-default btn-sm" %></td>
+   <td><%= button_to 'Delete',saledetail, class: "btn btn-danger btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>  
+</tbody>

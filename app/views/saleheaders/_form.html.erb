@@ -1,0 +1,89 @@
+<%= form_for(@saleheader) do |f| %>
+  <% if @saleheader.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@saleheader.errors.count, "error") %> prohibited this saleheader from being saved:</h2>
+
+      <ul>
+      <% @saleheader.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    
+   <div class="field">
+    <%= f.label :Factura_Numero %>  <%= f.text_field  :invoice_num, :disabled=>true %>
+
+    <%= f.label :Fecha_de_expedición%>  <%= f.date_select :expeditionDate %>
+    <%= f.label :Estado%> <%= f.select(:state ,[['Elaborada','0'],['Aprobada','1'],['Pagada','2']]) %>
+  </div>
+  <div class="field">
+    <%= f.label :Cliente_Tipo_Identificacion %>   
+    <%= f.select(:typeID ,[['Tarjeta de identidad','1'],['Cédula de ciudadanía','2'],['Tarjeta de extranjería','3'],['Cédula de extranjería','4'],['NIT','5'],['Pasaporte','6'],['NUIP','7'],['Permiso especial de permanencia','8']]) %> 
+    <%= f.label :Numero %>
+    <%= f.text_field :num_id, type: "number"%>
+    <%= f.label :Nacionalidad%>
+    <%= f.select(:citizenship ,[['Colombia'],['Costa Rica'],['Brasil'],['Estados Unidos'],['Rusia'],['España'],['Ecuador'],['Francia']]) %>
+  </div>
+  <div class="field">
+    <%= f.label :Nombre_y_apellidos_del_cliente %>
+    <%= f.text_field :allname%>
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true%>
+  </div>
+  <div class="field">
+    <%= f.label :Total_Valor_bruto %>
+    <%= f.text_field :grossvalue, :disabled=>true %>
+    <%= f.label :Valor_Impuesto%>
+    <%= f.text_field :tax, :disabled=>true  %>
+    <%= f.label :Valor_neto%>
+    <%= f.text_field :netvalue, :disabled=>true %>
+  </div>
+
+<h2>Detalle</h2>
+<table class="table table-bordered table-striped">
+  <th>Num</th>
+  <th>Articulo</th>
+  <th>Valor Unidad</th>
+  <th>Cantidad</th>
+  <th>Total</th>
+  <th>% Descuento</th> 
+  <th>Borrar</th> 
+  <th colspan="3"></th>
+<thead>
+  <tbody>
+  <%= f.fields_for :saledetails do |saledetail| %>
+  <tr>
+    <div class="sale_details_fields">
+      <td><div class="field">
+        <%= saledetail.number_field :line%>
+      </div></td>
+      <td><div class="field">
+        <%= saledetail.collection_select :articulo_id, Articulo.where(user_id: current_user.id).order(:nombre), :id, :name_with_desc, 
+        include_blank: false %>    
+      </div></td>
+      <td><div class="field">
+        <%= saledetail.number_field :value  %>
+      </div></td>
+      <td><div class="field">
+        <%= saledetail.number_field :quantity%>
+      </div></td>
+      <td><div class="field">
+        <%= saledetail.number_field :total%>
+      </div></td>
+      <td><div class="field">
+         <%= saledetail.number_field :discountpercent, :class => 'text_field', :step => 0.1 %>
+      </div></td>
+      <td><div class="field">
+        <%= saledetail.check_box :_destroy %>
+      </div></td>  
+    </div>  
+  </tr>
+  <% end %>
+  </tbody>
+</thead>  
+</table>  
+<div class="actions">
+   <%= f.submit %>
+</div> 
+<% end %>

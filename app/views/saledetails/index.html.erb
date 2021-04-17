@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Saledetails</h1>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>line</th>
+      <th>articulo_id</th>      
+      <th>value</th>
+      <th>quantity</th>
+      <th>total </th>
+      <th>discountpercent</th>
+       
+      <th colspan="3"></th>
+     </tr>
+  </thead>
+
+
+  <tbody>
+    <% @saledetails.each do |saledetail| %>
+     <td><%= saledetail.line %></td>
+     <td><%= saledetail.articulo_id %></td>     
+     <td><%= saledetail.value %></td>
+     <td><%= saledetail.quantity %></td>
+     <td><%= saledetail.total%></td>
+     <td><%= saledetail.discountpercent %></td>
+      <tr>
+        
+        <td><%= link_to 'Show', saledetail %></td>
+        <td><%= link_to 'Edit', edit_saledetail_path(saledetail) %></td>
+        <% if can? :destroy, saledetail %>
+          <td><%= link_to 'Destroy', saledetail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+<%= link_to 'New Saledetail', new_saledetail_path %>

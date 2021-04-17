@@ -1,0 +1,32 @@
+[ 2016-11-06 18:44:11.9299 304/7f79686047e0 age/Wat/Main.cpp:1264 ]: Starting PassengerAgent watchdog...
+[ 2016-11-06 18:44:11.9368 307/7f58b348c7e0 age/Hel/Main.cpp:944 ]: Starting PassengerAgent server...
+[ 2016-11-06 18:44:11.9370 307/7f58b348c7e0 age/Hel/Main.cpp:237 ]: PassengerAgent server running in multi-application mode.
+[ 2016-11-06 18:44:11.9392 307/7f58b348c7e0 age/Hel/Main.cpp:698 ]: PassengerAgent server online, PID 307
+[ 2016-11-06 18:44:11.9440 316/7ff72b0ca7e0 age/Log/Main.cpp:442 ]: Starting PassengerAgent logger...
+[ 2016-11-06 18:44:11.9447 316/7ff72b0ca7e0 age/Log/Main.cpp:323 ]: PassengerAgent logger online, PID 316
+App 344 stdout: 
+App 367 stdout: 
+App 421 stdout: 
+App 431 stdout: 
+App 438 stdout: 
+App 533 stdout: 
+App 541 stdout: 
+[ 2016-11-06 18:51:02.4014 307/7f58abfff700 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 541, application /home/ieconsultores/Railsapps/es/public (development)#default
+[ 2016-11-06 18:51:03.7654 307/7f58abfff700 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 438, application /home/ieconsultores/Railsapps/es/public (development)#default
+[ 2016-11-06 18:51:03.8057 307/7f58abfff700 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 533, application /home/ieconsultores/Railsapps/es/public (development)#default
+[ 2016-11-06 18:51:04.7146 307/7f58abfff700 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 431, application /home/ieconsultores/Railsapps/es/public (development)#default
+[ 2016-11-06 18:51:05.0290 307/7f58abfff700 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 421, application /home/ieconsultores/Railsapps/es/public (development)#default
+
+[ 2016-11-06 19:18:52.7382 307/7f58b29b6700 age/Hel/Main.cpp:508 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-11-06 19:18:52.7382 307/7f58b348c7e0 age/Hel/Main.cpp:867 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-11-06 19:18:52.7383 307/7f58b348c7e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 367, application /home/ieconsultores/Railsapps/es/public (development)#default
+[ 2016-11-06 19:18:52.7383 307/7f58b1fb5700 Ser/Server.h:455 ]: [ServerThr.2] Shutdown finished
+[ 2016-11-06 19:18:52.7384 307/7f58b29b6700 Ser/Server.h:455 ]: [ServerThr.1] Shutdown finished
+[ 2016-11-06 19:18:52.7384 307/7f58b15b4700 Ser/Server.h:455 ]: [AdminServer] Shutdown finished
+[ 2016-11-06 19:18:52.7385 307/7f58b348c7e0 age/Hel/Main.cpp:785 ]: Disconnecting long-running connections for process 367, application /home/ieconsultores/Railsapps/es/public (development)#default
+
+[ 2016-11-06 19:18:52.7393 316/7ff72ae39700 age/Log/Main.cpp:349 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-11-06 19:18:52.7393 316/7ff72b0ca7e0 age/Log/Main.cpp:411 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-11-06 19:18:52.7394 316/7ff72ae39700 Ser/Server.h:455 ]: [LoggerAdminServer] Shutdown finished
+[ 2016-11-06 19:18:52.7395 316/7ff72b0ca7e0 age/Log/Main.cpp:436 ]: PassengerAgent logger shutdown finished
+[ 2016-11-06 19:18:53.0437 307/7f58b348c7e0 age/Hel/Main.cpp:929 ]: PassengerAgent server shutdown finished

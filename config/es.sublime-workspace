@@ -1,0 +1,500 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"puntov",
+				"puntoventum"
+			],
+			[
+				"planvisi",
+				"planvisitum_id"
+			],
+			[
+				"punt",
+				"puntoventum_id"
+			],
+			[
+				"punto",
+				"Puntoventum"
+			],
+			[
+				"id",
+				"planvisitum_id"
+			],
+			[
+				"pun",
+				"puntoventum_id"
+			],
+			[
+				"usuario",
+				"usuarioasignado"
+			],
+			[
+				"us",
+				"user_id"
+			],
+			[
+				"ciudad",
+				"ciudad_nombre"
+			],
+			[
+				"pa",
+				"Pais"
+			],
+			[
+				"p",
+				"pais_nombre"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"Admin",
+				"adminaccount"
+			],
+			[
+				"protect",
+				"protect_from_forgery"
+			],
+			[
+				"mobi",
+				"mobile_device"
+			],
+			[
+				"dow",
+				"downcase"
+			],
+			[
+				"ma",
+				"match"
+			],
+			[
+				"h",
+				"HTTP_USER_AGENT"
+			],
+			[
+				"do",
+				"downcase"
+			],
+			[
+				"n",
+				"nombre"
+			],
+			[
+				"updat",
+				"update_process"
+			],
+			[
+				"empre",
+				"empresa_id"
+			],
+			[
+				"componente",
+				"componente_id"
+			],
+			[
+				"articulo",
+				"articulo_nombre"
+			],
+			[
+				"barcode",
+				"barcode_value"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ieconsultores/Railsapps/bandolera/config/initializers/devise.rb",
+		"/home/ieconsultores/Railsapps/bandolera/config/environments/development.rb",
+		"/home/ieconsultores/Railsapps/rd2/config/environment.rb",
+		"/home/ieconsultores/Railsapps/rd2/config/environments/development.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/inventarios/imprimir_datos.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/inventarios/imprimir_codbarras.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/articulos/index.xls.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/layouts/_header.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/welcome/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/inventarios/index.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/users/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/layouts/application.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/application_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/helpers/application_helper.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/inventarios/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/planvisita/index.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/_form.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/assets/stylesheets/application.css",
+		"/home/ieconsultores/Railsapps/rd2/app/views/layouts/application.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/welcome/index.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/lib/ProbeVigenereCipher",
+		"/home/ieconsultores/Railsapps/rd2/lib/VigenereCipher.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/edit.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/show.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/planvisita/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/models/planvisitum.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/edit.json.jbuilder",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/visita_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/articulos/index.json.jbuilder",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/index.json.jbuilder",
+		"/home/ieconsultores/Railsapps/rd2/app/assets/javascripts/visita.js",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/update.js.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/articulos/edit.json.jbuilder",
+		"/home/ieconsultores/Railsapps/rd2/app/models/visitum.rb",
+		"/home/ieconsultores/Railsapps/rd2/Gemfile",
+		"/home/ieconsultores/Railsapps/rd2/app/assets/javascripts/visita.coffee",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/planvisita_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/index.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/models/ability.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/_form.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/new.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/regions_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/models/ventum.rb",
+		"/home/ieconsultores/Railsapps/rd2/db/schema.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/models/puntoventum.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/new.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/show.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/_form.html.erb__",
+		"/home/ieconsultores/Railsapps/rd2/app/views/puntoventa/show.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/puntoventa/show.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/articulos/_form.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/temp",
+		"/home/ieconsultores/Railsapps/rd2/app/models/articulo.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/puntoventa_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/componentes_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/medidas_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/modelos_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/inventarios_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/articulos_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/medidas/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/unidad_medidas/show.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/unidad_medidas/new.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/unidad_medidas/edit.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/unidad_medidas/_form.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/unidad_medidas/index.json.jbuilder",
+		"/home/ieconsultores/Railsapps/rd2/app/views/unidad_medidas/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/articulos/show.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/models/role.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/articulos/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/db/seeds.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/venta_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/planvisita/_form.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/welcome_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/config/application.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/models/unidad_medida.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/models/ciudad.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/ciudads/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/ciudads_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/models/user.rb",
+		"/home/ieconsultores/Railsapps/rd2/config/initializers/devise.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/planvisita/show.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/puntoventa/_form.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/planvisita/create.js.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/venta/_form.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/venta/index.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/planvisita/index.mobile.erb_",
+		"/home/ieconsultores/Railsapps/rd2/app/views/planvisita/_post",
+		"/home/ieconsultores/Railsapps/rd2/app/views/layouts/_footer.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/assets/stylesheets/custom.css.scss",
+		"/home/ieconsultores/Railsapps/rd2/app/views/puntoventa/index.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/config/routes.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/users/show.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/users_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/users/_form.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/assets/javascripts/planvisita.js",
+		"/home/ieconsultores/Railsapps/rd2/app/views/planvisita/index_visita_mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/puntoventa/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/departamentos_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/departamentos/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/departamentos/index.json.jbuilder",
+		"/home/ieconsultores/Railsapps/rd2/app/views/planvisita/index.json.jbuilder",
+		"/home/ieconsultores/Railsapps/tmp/ajax.html",
+		"/home/ieconsultores/Railsapps/rd2/app/views/visita/new.js.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/assets/javascripts/tasks.js",
+		"/home/ieconsultores/Railsapps/rd2/app/assets/javascripts/planvisita.coffee",
+		"/home/ieconsultores/Railsapps/rd2/app/assets/javascripts/tasks.js.coffee",
+		"/home/ieconsultores/Railsapps/rd2/app/views/welcome/index.mobile_.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/controllers/pais_controller.rb",
+		"/home/ieconsultores/Railsapps/rd2/public/javascripts/prototype.js",
+		"/home/ieconsultores/Railsapps/rd2/app/views/venta/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/tipocanals/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/roles/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/regions/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/pais/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/fabricantes/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/equipos/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/canals/index.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/models/concerns/filterable.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/models/departamento.rb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/departamentos/show.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/departamentos/_form.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/venta/show.mobile.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/venta/_form.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/planvisita/show.html.erb",
+		"/home/ieconsultores/Railsapps/rd2/app/views/devise/registrations/edit.mobile.erb",
+		"/home/ieconsultores/Railsapps/prueba/Gemfile",
+		"/home/ieconsultores/Railsapps/prueba/db/migrate/20151201141230_create_users.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/ieconsultores/Railsapps/bandolera",
+			"/home/ieconsultores/Railsapps/rd2",
+			"/home/ieconsultores/Railsapps/rd2/app/assets/javascripts",
+			"/home/ieconsultores/Railsapps/rd2",
+			"/home/ieconsultores/Railsapps/rd2/public",
+			"/home/ieconsultores/Railsapps/rd2/public/jqtouch",
+			"/home/ieconsultores/Railsapps/rd2",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"please-change-me-at-config-initializers",
+			"please-change-me-at-config-initializaer",
+			"186.114.197.6",
+			"whitelisted_ips",
+			"config.web.console.whitelisted",
+			"form_for",
+			"    \n",
+			"longitude2",
+			"();\"}\n",
+			"                ",
+			"if",
+			"    \n",
+			"ip",
+			"?\n",
+			"save",
+			"Unidad_Medida",
+			"planvisitum_id",
+			"validates_uniqueness_of",
+			"\")\n",
+			"planvisitum_id",
+			">\n",
+			"Planvisitum",
+			"planvisitum",
+			">\n",
+			"id",
+			"user_id",
+			"    \n",
+			"current_user",
+			"name",
+			" \"",
+			"\",",
+			"t1",
+			"puntoventum",
+			"puntoventum_id",
+			"planvisita",
+			"puntoventum_id",
+			"form_for",
+			"visitum_params",
+			"planvisita",
+			"puntoventum_id",
+			"visitum_params",
+			"puntoventum",
+			"name",
+			"include_blank",
+			"puntoventum_id",
+			"false",
+			"planvisita",
+			"#",
+			"timeoutable",
+			"unidad_medida_path",
+			"time",
+			"post",
+			"..\"",
+			":\"",
+			"   ",
+			"\">",
+			"root_url",
+			"Visitum",
+			"  <",
+			" \n",
+			">\n",
+			"float: center;",
+			"center",
+			"post",
+			"6",
+			"application.rb",
+			"Genere",
+			"reporte",
+			"can",
+			"planvisitum_accept_path",
+			"accept",
+			"'\n",
+			": ",
+			"planvisitum_accept",
+			"end",
+			"planvisitum",
+			" \n",
+			"end",
+			"accept",
+			"btn",
+			"planvisitum",
+			"\n",
+			"linkClickSelector",
+			">\n",
+			"%>     ",
+			"\"><%=",
+			"destroy_user_session_path",
+			"back",
+			", ",
+			"unauthenticated",
+			"signin",
+			"You need to sign in\n",
+			">\n",
+			"%>\n",
+			"destroy_user_session_path",
+			"ui",
+			"back",
+			"destroy_user_session_path",
+			"d",
+			"arrow",
+			"class",
+			"arrow",
+			"border",
+			"navbar",
+			"style",
+			"frame",
+			"scroll",
+			"Home",
+			"<h3>",
+			"%>\n",
+			"\n  #scope :usuarioasignado, -> (usuario) { joins(:puntoventum, :planvisitum).where(\"planvisita.usuarioasignado = ? \", usuario)}\n\n",
+			"planvisitum_id",
+			"usuarioasignado",
+			"id",
+			"usuario",
+			"user_id",
+			"visita",
+			"user_id",
+			"visita",
+			"    @",
+			"end",
+			"with_user",
+			")}\n",
+			"planvisitum",
+			"current_user",
+			"null",
+			"class",
+			"end"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 340.0,
+	"status_bar_visible": true
+}

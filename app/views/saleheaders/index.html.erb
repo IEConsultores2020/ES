@@ -1,0 +1,58 @@
+<p id="notice"><%= notice %></p>
+    <%= link_to 'Ingresar Factura de Venta', new_saleheader_path,  class: "btn-primary btn-sm" %>
+
+<h1>Listado Factura de Venta</h1>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Datos Factura </p> 
+          Número
+      </th> 
+      <th>Fecha De Expedición  </th>
+      <th>Estado</th>
+      <th>Datos Cliente </p> 
+          Tipo Identificacion
+      </th>
+      <th>Numero</th>
+      <th>Nacionalidad</th>
+      <th>Nombre completo</th>
+      <th>email</th>
+      <th>Totales </p> 
+          Valor Bruto
+      </th>
+      <th>Impuesto</th>
+       <th>Valor Neto</th>
+    <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @saleheaders.each do |saleheader| %>
+     <tr>
+        <td><%= saleheader.invoice_num %></td>
+        <td><%= saleheader.expeditionDate %></td>     
+        <td><%= saleheader.state %></td>   
+        <td><%= saleheader.typeID %></td>
+        <td><%= saleheader.num_id  %></td>
+        <td><%= saleheader.citizenship  %></td>
+        <td><%= saleheader.allname %></td>
+        <td><%= saleheader.email %></td>
+        <td><%= saleheader.grossvalue %></td>
+        <td><%= saleheader.tax%></td>
+        <td><%= saleheader.netvalue %></td>
+        
+           
+      <tr>      
+        <td><%= link_to 'Modificar', edit_saleheader_path(saleheader), class: "btn btn-success btn-sm" , class: "btn btn-success btn-sm"   %></td>
+        <td><%= link_to 'Detalle', show_saledetails_saleheader_path(saleheader) , class: "btn btn-success btn-sm" %></td> 
+        <td><%= link_to 'Destroy', saleheader, method: :delete, data: { confirm: 'Are you sure?' } ,  class: "btn btn-danger btn-sm" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+
+

@@ -1,0 +1,32 @@
+<h1>Kardex Entradas</h1>
+
+
+<table  class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Fecha Creacion</th>
+      <th>Fecha Ingreso</th>
+      <th>Documento</th>
+      <th>Articulo</th>
+      <th>Cantidad</th>
+      <th>Existencia</th>
+      <th>$ Compra</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inkardexes.each do |inkardex| %>
+      <tr>
+        <td><%= inkardex.created_at.strftime('%F') %>   
+        <td><%= inkardex.infecha %> | <%= inkardex.id %></td>
+        <td><%= inkardex.numdocumento %></td>
+        <td><%= inkardex.articulo_nombre %></td>
+        <td><%= inkardex.cantidad %></td>
+        <td><%= inkardex.existencia %></td>
+        <td><%= inkardex.valorcompra %></td>        
+      </tr> 
+    <% end %>
+  </tbody>
+</table>
+
+<br>

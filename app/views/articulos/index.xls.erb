@@ -1,0 +1,30 @@
+<table border="1">
+  <tr>
+    <th>Codigo</th>
+    <th>Descripcion</th>
+    <th>Unidad de medida</th>
+    <th>Tipo de componente</th>
+    <th>Modelo</th>
+    <th>Codigo de barras</th>
+     <th>ptax1 </th>
+  </tr>
+  
+  <% @articulos.each do |articulo| %>
+      <tr>        
+        <td><%= articulo.descripcion %></td>
+        <td><%= articulo.medida_nombre %></td>
+        <td><%= articulo.componente_nombre %></td>
+        <td><%= articulo.modelo_nombre %></td>   
+        <td><%= articulo.nombre %></td>
+        <td><%= articulo.ptax %></td>
+        
+        <td><% barcode_image_uri(articulo.nombre,'Code39') %>
+             <% uri = "http://190.68.115:123:3000/barcode_images/Code39_#{articulo.nombre}.png" %>
+             <img src = <%= uri %> width="180" height="18" /> </td>       
+      </tr>
+  <% end %>
+</table>
+
+
+
+

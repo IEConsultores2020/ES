@@ -1,0 +1,17 @@
+rails console
+
+--Borrado inventarios usuario id=29 fernando_torres36@yahoo.com
+Inventario.delete_all("user_id = 29")
+
+--Borrado kardex usuario id=29 fernando_torres36@yahoo.com
+Inkardex.delete_all("user_id = 29")
+
+--Borrado compra usuario id=29 fernando_torres36@yahoo.com
+Compra.delete_all("user_id = 29")
+
+--Borrado conteo usuario id=29 fernando_torres36@yahoo.com
+Conteo.delete_all("user_id = 29")
+
+
+--Buscar
+Inkardex.where(user_id: nil).count

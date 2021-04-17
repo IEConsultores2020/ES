@@ -1,0 +1,62 @@
+<p id="notice"><%= notice %></p>
+
+<% @articulo = @inkardex.articulo %>
+
+<div class="row" style="background-color:lightcyan;">
+        <div class="col-md-7">
+          <p><strong>Nombre:</strong>
+            <%= @articulo.nombre %>
+          </p>
+          <p><strong>Descripcion:</strong>
+            <%= @articulo.descripcion %>
+          </p>
+          <p> <strong>Foto:</strong>
+            <%= @articulo.foto %>
+          </p>
+          <p><strong>Unidad medida:</strong>
+            <%= @articulo.medida_nombre %>
+          </p>
+          <p><strong>Componente:</strong>
+            <%= @articulo.componente_nombre %>
+          </p>
+          <p><strong>Modelo:</strong>
+            <%= @articulo.modelo_nombre %>
+          </p>
+          <p><strong>Vendedor:</strong>
+            <%= @articulo.user_name %>
+          </p>
+      </div>
+</div> 
+
+<p>
+  <strong>Infecha:</strong>
+  <%= @inkardex.infecha %>
+</p>
+
+<p>
+  <strong>Numdocumento:</strong>
+  <%= @inkardex.numdocumento %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @inkardex.cantidad %>
+</p>
+
+<p>
+  <strong>Existencia:</strong>
+  <%= @inkardex.existencia %>
+</p>
+
+<p>
+  <strong>Valorcompra:</strong>
+  <%= @inkardex.valorcompra %>
+</p>
+
+<p>
+  <strong>Moneda:</strong>
+  <%= @inkardex.moneda %>
+</p>
+
+<%= link_to 'Edit', edit_inkardex_path(@inkardex) %> |
+<%= link_to 'Back', inkardexes_path %>

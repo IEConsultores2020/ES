@@ -1,0 +1,57 @@
+<h1>Mostrar Kardex Articulo</h1>
+<% provide(:title, @articulo.nombre) %>
+<div class="container-fluid">
+    <div class="row" style="background-color:lightcyan">
+        <div class="col-md-5">
+	        <p><strong>Nombre:</strong>
+	        <%= @articulo.nombre %></p>
+	        <p><strong>Descripcion:</strong>
+	        <%= @articulo.descripcion %></p>
+	        <p><strong>Unidad medida:</strong>
+	        <%= @articulo.medida_nombre %></p>
+	        <p><strong>Componente:</strong>
+	        <%= @articulo.componente_nombre %></p>
+	        <p><strong>Modelo:</strong>
+	        <%= @articulo.modelo_nombre %></p>
+	         <p><strong>Impuesto:</strong>
+	       	<%= @articulo.ptax %></p>
+	        <p><strong>Barcode:</strong>
+	       	        <% barcode_image_uri(@articulo.nombre,'Code39') %>
+	        <% uri = "/barcode_images/Code39_#{@articulo.nombre}.png" %>
+	        <img src = <%= uri %> width="100" height="50" /></p>
+	    </div>
+	</div>
+	<p id="notice"><%= notice %></p>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Listing Kardex</h1>
+        <% if @articulo.inkardexes.any? %> 
+	        <table class="table table-bordered table-striped">
+			    <thead>
+			        <tr>
+                     <th>Fecha Creacion </th>
+			         <th>Fecha </th>
+			         <th>N° Documento</th>	
+			         <th>Cantidad</th>     
+			         <th>Existencia</th>
+			         <th>Valor Compra Unidad</th>
+			    </thead>
+			    <tbody>
+
+    <% @articulo.inkardexes.each do |inkardex| %>
+      <tr>     	
+        <td><%= inkardex.created_at.strftime('%F') %> 
+        <td><%= inkardex.infecha  %></td>
+        <td><%= inkardex.numdocumento %></td>
+   <td><%= number_with_precision(inkardex.cantidad, :precision => 2, :separator => ',', :delimiter => '.') %></td>  
+   <td><%= number_with_precision(inkardex.existencia, :precision => 2, :separator => ',', :delimiter => '.') %></td>
+   <td><%= number_with_precision(inkardex.valorcompra, :precision => 2, :separator => ',', :delimiter => '.') %></td> 
+   </tr>
+    <% end %>
+  </tbody>
+			    
+		    </table>            
+	    <% end %>
+	  </div>
+	</div>
+</div>

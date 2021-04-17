@@ -1,0 +1,23 @@
+      <% if user_signed_in? %>
+        <ul>  
+          <div class="ui-nodisc-icon ui-alt-icon">
+            <li class="arrow">
+
+               
+               <% if current_user.seller? %>               
+               <%= link_to "Inventarios", inventario_path, :class => "ui-btn ui-shadow ui-corner-all ui-icon-grid  ui-btn-icon-left" %>
+               <% end %>
+
+              <%= link_to "Edit profile", edit_user_registration_path, :class => "ui-btn ui-shadow ui-corner-all ui-icon-gear ui-btn-icon-left" %>
+              <%= link_to "Sign out", destroy_user_session_path, :method => :get, :class => "ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-left"  %> 
+            </li>
+          </div> 
+      </ul>
+      <% end %>
+
+
+ <% if not user_signed_in? %>
+     <ul><li class="individual"><%= link_to "Sign up", new_user_registration_path %></li></ul>
+     <ul><li class="individual"><%= link_to "Sign in", new_user_session_path  %></li></ul>
+  <% end %>
+

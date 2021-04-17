@@ -1,0 +1,44 @@
+<div id="container"> 
+<p>
+  <strong>Organizaciòn</strong>
+  <%= @einvoice.organizationtype %>
+</p>
+<p>
+  <strong>Identificacion:</strong>
+  <%= @einvoice.identification %>
+</p>
+<p>
+  <strong>Nombres Apellidos:</strong>
+  <%= @einvoice.name%>
+</p>
+<p>
+  <strong>Fecha inicio:</strong>
+  <%= @einvoice.init_date_allow %>
+</p>
+<p>
+  <strong>Fecha fin:</strong>
+   <%= @einvoice.end_date_allow %>
+</p>
+<p>
+  <strong>Código Facturación:</strong><%= @einvoice.invoice_code %>
+</p>
+<p>
+  <strong>Prefijo:</strong>
+  <%= @einvoice.prefix %>
+</p>
+<p>
+ <strong>Impuesto</strong>
+ <%= @einvoice.ptax2%> 
+</p>
+<p>
+ <strong>Moneda:</strong>
+ <%= @einvoice.currency%> 
+</p>
+<%= link_to 'Editar', edit_einvoice_path(@einvoice) %> |
+<%= link_to 'Atras', einvoices_path %>
+
+
+
+
+
+

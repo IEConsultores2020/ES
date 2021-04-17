@@ -1,0 +1,13 @@
+def self.search(query, filter, datefilter)
+    if datefilter.blank? or datefilter == 0 then
+    # where(:title, query) -> This would return an exact match of the query      
+      joins(:articulo).where("num_factura like ? 
+        and exists (select 1 from componentes where codigo like ? 
+          and articulos.componente_id = componentes.id)", "%#{query}%", "%#{filter}%")
+    else
+      joins(:articulo).where("compras.fecha_ingreso =  ? 
+        and num_factura like ? 
+        and  exists (select 1 from componentes where codigo like ? 
+        and articulos.componente_id = componentes.id)", "#{datefilter}", "%#{query}%", "%#{filter}%")
+    end
+  end

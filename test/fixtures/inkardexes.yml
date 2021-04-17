@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  infecha: 2017-01-09
+  numdocumento: MyString
+  cantidad: 1.5
+  existencia: 1.5
+  valorcompra: 1.5
+  moneda: MyString
+
+two:
+  infecha: 2017-01-09
+  numdocumento: MyString
+  cantidad: 1.5
+  existencia: 1.5
+  valorcompra: 1.5
+  moneda: MyString

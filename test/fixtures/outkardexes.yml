@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  outfecha: 2017-01-09
+  numdocumento: 
+  cantidad: 1.5
+  valorventa: 1.5
+  moneda: MyString
+
+two:
+  outfecha: 2017-01-09
+  numdocumento: 
+  cantidad: 1.5
+  valorventa: 1.5
+  moneda: MyString
