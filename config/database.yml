@@ -6,6 +6,7 @@
 #
 default: &default
   adapter: postgresql
+  encoding: unicode
   pool: 5
   timeout: 5000
 
@@ -18,9 +19,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.postgresql
+  database: es  #db/test.postgresql
 
 production:
   <<: *default
-  database: db/production.postgresql
+  database: es #db/production.postgresql
 
