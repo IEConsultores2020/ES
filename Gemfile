@@ -25,6 +25,7 @@ gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'json', '~> 1.7', '>= 1.7.7'
 gem 'jbuilder', '~> 2.0'
 gem 'wicked_pdf'
 
