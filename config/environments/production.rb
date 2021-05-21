@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Enable stdout logger. 20210521 EYK
+config.logger = Logger.new(STDOUT)
 end

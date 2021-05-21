@@ -15,6 +15,16 @@
       </ul>
       <% end %>
 
+<div  id="dialog" title="Options">
+<p>Controle la entrada y salida de artículos</p>
+  <ul>
+    <li>1. Cree artículos</li>
+    <li>2. Genere el reporte de artículos con código de barras</li>
+    <li>3. Registre una entrada de un artículo con su valor de venta y compra</li>
+    <li>4. Venda artículos</li>
+    <li>5. Genere el reporte de entrada y salida de artículos</li>
+  </ul>
+</div id="dialog" title="Options">
 
  <% if not user_signed_in? %>
      <ul><li class="individual"><%= link_to "Sign up", new_user_registration_path %></li></ul>

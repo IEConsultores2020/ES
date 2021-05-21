@@ -11,7 +11,7 @@ gem 'pg', '~> 0.18.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '= 3'
+gem 'uglifier', '~> 3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1', '>= 4.1.1'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -25,7 +25,7 @@ gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'json', '~> 1.7', '>= 1.7.7'
+#gem 'json', '~> 1.7', '>= 1.7.7'
 gem 'jbuilder', '~> 2.0'
 gem 'wicked_pdf'
 
