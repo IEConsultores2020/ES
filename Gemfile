@@ -92,5 +92,3 @@ gem 'roo'
 
 gem 'roo-xls'
 gem 'googlecharts'
-
-
