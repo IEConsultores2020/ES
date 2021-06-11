@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20190624225343) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "articulos", force: :cascade do |t|
     t.string   "nombre"
     t.string   "descripcion"
@@ -30,11 +33,11 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.decimal  "ptax2"
   end
 
-  add_index "articulos", ["componente_id"], name: "index_articulos_on_componente_id"
-  add_index "articulos", ["medida_id"], name: "index_articulos_on_medida_id"
-  add_index "articulos", ["modelo_id"], name: "index_articulos_on_modelo_id"
-  add_index "articulos", ["unidad_medida_id"], name: "index_articulos_on_unidad_medida_id"
-  add_index "articulos", ["user_id"], name: "index_articulos_on_user_id"
+  add_index "articulos", ["componente_id"], name: "index_articulos_on_componente_id", using: :btree
+  add_index "articulos", ["medida_id"], name: "index_articulos_on_medida_id", using: :btree
+  add_index "articulos", ["modelo_id"], name: "index_articulos_on_modelo_id", using: :btree
+  add_index "articulos", ["unidad_medida_id"], name: "index_articulos_on_unidad_medida_id", using: :btree
+  add_index "articulos", ["user_id"], name: "index_articulos_on_user_id", using: :btree
 
   create_table "canals", force: :cascade do |t|
     t.string   "name"
@@ -44,8 +47,8 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.datetime "updated_at",   null: false
   end
 
-  add_index "canals", ["tipocanal_id"], name: "index_canals_on_tipocanal_id"
-  add_index "canals", ["user_id"], name: "index_canals_on_user_id"
+  add_index "canals", ["tipocanal_id"], name: "index_canals_on_tipocanal_id", using: :btree
+  add_index "canals", ["user_id"], name: "index_canals_on_user_id", using: :btree
 
   create_table "ciudads", force: :cascade do |t|
     t.string   "name"
@@ -58,9 +61,9 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "region_id"
   end
 
-  add_index "ciudads", ["departamento_id"], name: "index_ciudads_on_departamento_id"
-  add_index "ciudads", ["region_id"], name: "index_ciudads_on_region_id"
-  add_index "ciudads", ["user_id"], name: "index_ciudads_on_user_id"
+  add_index "ciudads", ["departamento_id"], name: "index_ciudads_on_departamento_id", using: :btree
+  add_index "ciudads", ["region_id"], name: "index_ciudads_on_region_id", using: :btree
+  add_index "ciudads", ["user_id"], name: "index_ciudads_on_user_id", using: :btree
 
   create_table "componentes", force: :cascade do |t|
     t.string   "codigo"
@@ -71,7 +74,7 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "user_id"
   end
 
-  add_index "componentes", ["user_id"], name: "index_componentes_on_user_id"
+  add_index "componentes", ["user_id"], name: "index_componentes_on_user_id", using: :btree
 
   create_table "compras", force: :cascade do |t|
     t.text     "num_factura"
@@ -88,9 +91,9 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "tienda_id"
   end
 
-  add_index "compras", ["articulo_id"], name: "index_compras_on_articulo_id"
-  add_index "compras", ["tienda_id"], name: "index_compras_on_tienda_id"
-  add_index "compras", ["user_id"], name: "index_compras_on_user_id"
+  add_index "compras", ["articulo_id"], name: "index_compras_on_articulo_id", using: :btree
+  add_index "compras", ["tienda_id"], name: "index_compras_on_tienda_id", using: :btree
+  add_index "compras", ["user_id"], name: "index_compras_on_user_id", using: :btree
 
   create_table "conteos", force: :cascade do |t|
     t.decimal  "cantidad",        precision: 16, scale: 2
@@ -105,8 +108,8 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "user_id"
   end
 
-  add_index "conteos", ["articulo_id"], name: "index_conteos_on_articulo_id"
-  add_index "conteos", ["inventario_id"], name: "index_conteos_on_inventario_id"
+  add_index "conteos", ["articulo_id"], name: "index_conteos_on_articulo_id", using: :btree
+  add_index "conteos", ["inventario_id"], name: "index_conteos_on_inventario_id", using: :btree
 
   create_table "departamentos", force: :cascade do |t|
     t.string   "name"
@@ -117,8 +120,8 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "departamentos", ["pais_id"], name: "index_departamentos_on_pais_id"
-  add_index "departamentos", ["user_id"], name: "index_departamentos_on_user_id"
+  add_index "departamentos", ["pais_id"], name: "index_departamentos_on_pais_id", using: :btree
+  add_index "departamentos", ["user_id"], name: "index_departamentos_on_user_id", using: :btree
 
   create_table "einvoices", force: :cascade do |t|
     t.string   "organizationtype"
@@ -143,7 +146,7 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.decimal  "ptax2"
   end
 
-  add_index "einvoices", ["user_id"], name: "index_einvoices_on_user_id"
+  add_index "einvoices", ["user_id"], name: "index_einvoices_on_user_id", using: :btree
 
   create_table "empresas", force: :cascade do |t|
     t.string   "nombre"
@@ -154,7 +157,7 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "user_id"
   end
 
-  add_index "empresas", ["user_id"], name: "index_empresas_on_user_id"
+  add_index "empresas", ["user_id"], name: "index_empresas_on_user_id", using: :btree
 
   create_table "equipos", force: :cascade do |t|
     t.string   "referencia"
@@ -165,8 +168,8 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.datetime "updated_at",    null: false
   end
 
-  add_index "equipos", ["fabricante_id"], name: "index_equipos_on_fabricante_id"
-  add_index "equipos", ["user_id"], name: "index_equipos_on_user_id"
+  add_index "equipos", ["fabricante_id"], name: "index_equipos_on_fabricante_id", using: :btree
+  add_index "equipos", ["user_id"], name: "index_equipos_on_user_id", using: :btree
 
   create_table "fabricantes", force: :cascade do |t|
     t.string   "nombre"
@@ -175,7 +178,7 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "fabricantes", ["user_id"], name: "index_fabricantes_on_user_id"
+  add_index "fabricantes", ["user_id"], name: "index_fabricantes_on_user_id", using: :btree
 
   create_table "inkardexes", force: :cascade do |t|
     t.date     "infecha"
@@ -190,8 +193,8 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "articulo_id"
   end
 
-  add_index "inkardexes", ["articulo_id"], name: "index_inkardexes_on_articulo_id"
-  add_index "inkardexes", ["user_id"], name: "index_inkardexes_on_user_id"
+  add_index "inkardexes", ["articulo_id"], name: "index_inkardexes_on_articulo_id", using: :btree
+  add_index "inkardexes", ["user_id"], name: "index_inkardexes_on_user_id", using: :btree
 
   create_table "inventarios", force: :cascade do |t|
     t.string   "moneda"
@@ -207,9 +210,9 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.decimal  "valor_venta",      precision: 16, scale: 2
   end
 
-  add_index "inventarios", ["articulo_id"], name: "index_inventarios_on_articulo_id"
-  add_index "inventarios", ["tienda_id"], name: "index_inventarios_on_tienda_id"
-  add_index "inventarios", ["user_id"], name: "index_inventarios_on_user_id"
+  add_index "inventarios", ["articulo_id"], name: "index_inventarios_on_articulo_id", using: :btree
+  add_index "inventarios", ["tienda_id"], name: "index_inventarios_on_tienda_id", using: :btree
+  add_index "inventarios", ["user_id"], name: "index_inventarios_on_user_id", using: :btree
 
   create_table "kardexes", force: :cascade do |t|
     t.integer  "valor_compra"
@@ -226,8 +229,8 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "user_id"
   end
 
-  add_index "kardexes", ["articulo_id"], name: "index_kardexes_on_articulo_id"
-  add_index "kardexes", ["inventario_id"], name: "index_kardexes_on_inventario_id"
+  add_index "kardexes", ["articulo_id"], name: "index_kardexes_on_articulo_id", using: :btree
+  add_index "kardexes", ["inventario_id"], name: "index_kardexes_on_inventario_id", using: :btree
 
   create_table "medidas", force: :cascade do |t|
     t.string   "codigo"
@@ -238,7 +241,7 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "user_id"
   end
 
-  add_index "medidas", ["user_id"], name: "index_medidas_on_user_id"
+  add_index "medidas", ["user_id"], name: "index_medidas_on_user_id", using: :btree
 
   create_table "modelos", force: :cascade do |t|
     t.string   "codigo"
@@ -249,7 +252,7 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "user_id"
   end
 
-  add_index "modelos", ["user_id"], name: "index_modelos_on_user_id"
+  add_index "modelos", ["user_id"], name: "index_modelos_on_user_id", using: :btree
 
   create_table "outkardexes", force: :cascade do |t|
     t.date     "outfecha"
@@ -263,8 +266,8 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "articulo_id"
   end
 
-  add_index "outkardexes", ["articulo_id"], name: "index_outkardexes_on_articulo_id"
-  add_index "outkardexes", ["user_id"], name: "index_outkardexes_on_user_id"
+  add_index "outkardexes", ["articulo_id"], name: "index_outkardexes_on_articulo_id", using: :btree
+  add_index "outkardexes", ["user_id"], name: "index_outkardexes_on_user_id", using: :btree
 
   create_table "pais", force: :cascade do |t|
     t.string   "name"
@@ -274,7 +277,7 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.string   "huso"
   end
 
-  add_index "pais", ["user_id"], name: "index_pais_on_user_id"
+  add_index "pais", ["user_id"], name: "index_pais_on_user_id", using: :btree
 
   create_table "personas", force: :cascade do |t|
     t.integer  "user_id"
@@ -284,8 +287,8 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.datetime "updated_at",      null: false
   end
 
-  add_index "personas", ["ciudad_id"], name: "index_personas_on_ciudad_id"
-  add_index "personas", ["user_id"], name: "index_personas_on_user_id"
+  add_index "personas", ["ciudad_id"], name: "index_personas_on_ciudad_id", using: :btree
+  add_index "personas", ["user_id"], name: "index_personas_on_user_id", using: :btree
 
   create_table "planvisita", force: :cascade do |t|
     t.integer  "usuarioasignado"
@@ -296,8 +299,8 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.datetime "updated_at",      null: false
   end
 
-  add_index "planvisita", ["puntoventum_id"], name: "index_planvisita_on_puntoventum_id"
-  add_index "planvisita", ["user_id"], name: "index_planvisita_on_user_id"
+  add_index "planvisita", ["puntoventum_id"], name: "index_planvisita_on_puntoventum_id", using: :btree
+  add_index "planvisita", ["user_id"], name: "index_planvisita_on_user_id", using: :btree
 
   create_table "products", force: :cascade do |t|
     t.string   "title"
@@ -321,9 +324,9 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.datetime "updated_at",                              null: false
   end
 
-  add_index "puntoventa", ["ciudad_id"], name: "index_puntoventa_on_ciudad_id"
-  add_index "puntoventa", ["tipocanal_id"], name: "index_puntoventa_on_tipocanal_id"
-  add_index "puntoventa", ["user_id"], name: "index_puntoventa_on_user_id"
+  add_index "puntoventa", ["ciudad_id"], name: "index_puntoventa_on_ciudad_id", using: :btree
+  add_index "puntoventa", ["tipocanal_id"], name: "index_puntoventa_on_tipocanal_id", using: :btree
+  add_index "puntoventa", ["user_id"], name: "index_puntoventa_on_user_id", using: :btree
 
   create_table "regions", force: :cascade do |t|
     t.string   "name"
@@ -332,7 +335,7 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "regions", ["user_id"], name: "index_regions_on_user_id"
+  add_index "regions", ["user_id"], name: "index_regions_on_user_id", using: :btree
 
   create_table "roles", force: :cascade do |t|
     t.string   "name"
@@ -387,8 +390,8 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "user_id"
   end
 
-  add_index "tiendas", ["empresa_id"], name: "index_tiendas_on_empresa_id"
-  add_index "tiendas", ["user_id"], name: "index_tiendas_on_user_id"
+  add_index "tiendas", ["empresa_id"], name: "index_tiendas_on_empresa_id", using: :btree
+  add_index "tiendas", ["user_id"], name: "index_tiendas_on_user_id", using: :btree
 
   create_table "tipocanals", force: :cascade do |t|
     t.string   "nombre"
@@ -397,7 +400,7 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "tipocanals", ["user_id"], name: "index_tipocanals_on_user_id"
+  add_index "tipocanals", ["user_id"], name: "index_tipocanals_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
@@ -419,10 +422,10 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.integer  "einvoice"
   end
 
-  add_index "users", ["ciudad_id"], name: "index_users_on_ciudad_id"
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  add_index "users", ["role_id"], name: "index_users_on_role_id"
+  add_index "users", ["ciudad_id"], name: "index_users_on_ciudad_id", using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["role_id"], name: "index_users_on_role_id", using: :btree
 
   create_table "venta", force: :cascade do |t|
     t.date     "fecha"
@@ -435,9 +438,9 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.datetime "updated_at",     null: false
   end
 
-  add_index "venta", ["equipo_id"], name: "index_venta_on_equipo_id"
-  add_index "venta", ["puntoventum_id"], name: "index_venta_on_puntoventum_id"
-  add_index "venta", ["user_id"], name: "index_venta_on_user_id"
+  add_index "venta", ["equipo_id"], name: "index_venta_on_equipo_id", using: :btree
+  add_index "venta", ["puntoventum_id"], name: "index_venta_on_puntoventum_id", using: :btree
+  add_index "venta", ["user_id"], name: "index_venta_on_user_id", using: :btree
 
   create_table "visita", force: :cascade do |t|
     t.integer  "user_id"
@@ -455,8 +458,8 @@ ActiveRecord::Schema.define(version: 20190624225343) do
     t.string   "IPout"
   end
 
-  add_index "visita", ["planvisitum_id"], name: "index_visita_on_planvisitum_id"
-  add_index "visita", ["puntoventum_id"], name: "index_visita_on_puntoventum_id"
-  add_index "visita", ["user_id"], name: "index_visita_on_user_id"
+  add_index "visita", ["planvisitum_id"], name: "index_visita_on_planvisitum_id", using: :btree
+  add_index "visita", ["puntoventum_id"], name: "index_visita_on_puntoventum_id", using: :btree
+  add_index "visita", ["user_id"], name: "index_visita_on_user_id", using: :btree
 
 end
