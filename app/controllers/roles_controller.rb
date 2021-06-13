@@ -1,4 +1,5 @@
 class RolesController < ApplicationController 
+  before_action :authenticate_user! #202106
   before_filter :authenticate_user!
   load_and_authorize_resource
 
