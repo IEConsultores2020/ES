@@ -1,33 +1,34 @@
+<h1>ES : Entradas/Salidas</h1>
+
       <% if user_signed_in? %>
         <ul>  
-          <div class="ui-nodisc-icon ui-alt-icon">
-            <li class="arrow">
+          <div data-role="nav-bar" class="ui-nodisc-icon ui-alt-icon">   
+            <li  class="arrow">
+              <% if current_user.seller? %>                             
+                  <%= link_to "Inventarios", inventario_path, :class => "ui-btn ui-shadow ui-corner-all ui-icon-grid  ui-btn-icon-left" %>
+              <% end %>
 
-               
-               <% if current_user.seller? %>               
-               <%= link_to "Inventarios", inventario_path, :class => "ui-btn ui-shadow ui-corner-all ui-icon-grid  ui-btn-icon-left" %>
-               <% end %>
-
+              <% if current_user.admin? %>               
+                  <%= link_to "Usuarios", users_path , :class => "ui-btn ui-shadow ui-corner-all ui-icon-grid  ui-btn-icon-left" %>
+            <% end %>               
+            </li>
+            <li  class="arrow">            
               <%= link_to "Edit profile", edit_user_registration_path, :class => "ui-btn ui-shadow ui-corner-all ui-icon-gear ui-btn-icon-left" %>
               <%= link_to "Sign out", destroy_user_session_path, :method => :get, :class => "ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-left"  %> 
             </li>
           </div> 
-      </ul>
+      </ul>      
       <% end %>
 
-<div  id="dialog" title="Options">
-<p>Controle la entrada y salida de artículos</p>
-  <ul>
-    <li>1. Cree artículos</li>
-    <li>2. Genere el reporte de artículos con código de barras</li>
-    <li>3. Registre una entrada de un artículo con su valor de venta y compra</li>
-    <li>4. Venda artículos</li>
-    <li>5. Genere el reporte de entrada y salida de artículos</li>
-  </ul>
-</div id="dialog" title="Options">
 
  <% if not user_signed_in? %>
      <ul><li class="individual"><%= link_to "Sign up", new_user_registration_path %></li></ul>
      <ul><li class="individual"><%= link_to "Sign in", new_user_session_path  %></li></ul>
-  <% end %>
+ <% end %>
+
+<div  id="dialog" title="Options">
+  <ul>
+    <li>Desde su pc ingrese a http://www.nanducho.com/es para ver todas las opciones</li>
+  </ul>
+ </div id="dialog" title="Options">
 

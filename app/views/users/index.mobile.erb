@@ -1,0 +1,28 @@
+
+<h1>ES|Usuarios</h1>
+
+    <% @users.each do |user| %>      
+        <h4><%= user.name %></h4>
+        <ul data-role="listview" data-inset="false">
+          <li><%= user.numdoc %></li>
+          <li><%= user.email %></li>
+          <li>Ciudad:<%= user.ciudad %></li>
+          <li>Role:<%= user.role.name %></li>
+          <li>
+            <% if can? :update, user %>
+            <button data-role="none">
+            <%= link_to 'Edit', edit_user_path(user) %>
+            </button>
+            <% end %>
+            <% if can? :destroy, user %>
+            <button data-role="none">
+              <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </button>
+            <% end %>
+          </li>
+        </ul>        
+    <% end %>
+
+
+
+

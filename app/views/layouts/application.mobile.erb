@@ -20,7 +20,7 @@
       <div data-role="header"  data-position="fixed" >  
         <ul>      
         <% if user_signed_in? %>
-          <h2><%= current_user.email %></h2>
+          <h2><%= current_user.name %></h2>
         <% end %>
         <% if not user_signed_in? %>
           <h2><%= "Entradas/Salidas" %></h2>
@@ -37,7 +37,7 @@
             <%= link_to "Back", :back, :class => "ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-notext ui-btn-inline" unless current_page? root_path %>
 
             <% if user_signed_in? %>
-            <%= link_to "Sign out", destroy_user_session_path, :method => :get, :class => "ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"  %>       
+            <%= link_to "Sign out", destroy_user_session_path, :method => :get, :class => "ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline"  %>
             <% end %>     
             <h1><%=h yield(:title) %></h1>             
           </div>

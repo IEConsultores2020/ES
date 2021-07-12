@@ -21,6 +21,7 @@ gem 'coffee-rails', '~> 4.1', '>= 4.1.1'
 gem 'jquery-rails', '~> 3.1', '>= 3.1.5'
 
 gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
+gem 'jquery_mobile_rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
