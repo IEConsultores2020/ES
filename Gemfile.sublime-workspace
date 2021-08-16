@@ -1,0 +1,207 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/osboxes/es"
+	],
+	"file_history":
+	[
+		"/home/osboxes/es/app/views/layouts/_header.mobile_.erb",
+		"/home/osboxes/es/app/views/layouts/application.html.erb",
+		"/home/osboxes/es/app/views/layouts/application.mobile.erb",
+		"/home/osboxes/es/app/views/layouts/_footer.html.erb",
+		"/home/osboxes/es/app/views/layouts/_header.html.erb",
+		"/home/osboxes/es/app/views/welcome/index.html.erb",
+		"/home/osboxes/cyc/Gemfile",
+		"/home/osboxes/es/app/views/users/index.mobile.erb",
+		"/home/osboxes/es/app/views/layouts/_header.mobile.erb",
+		"/home/osboxes/es/app/controllers/application_controller.rb",
+		"/home/osboxes/es/app/views/welcome/edit.mobile.erb",
+		"/home/osboxes/es/app/views/users/index.html.erb",
+		"/home/osboxes/es/app/views/welcome/index.mobile.erb",
+		"/home/osboxes/es/app/views/users/edit.html.erb",
+		"/home/osboxes/es/app/assets/stylesheets/application.css",
+		"/home/osboxes/es/app/assets/javascripts/application.js",
+		"/home/osboxes/es/Gemfile",
+		"/home/osboxes/es/db/seeds.rb",
+		"/home/osboxes/es/app/views/devise/sessions/new.mobile.erb",
+		"/home/osboxes/es/app/views/devise/registrations/new.mobile.erb",
+		"/home/osboxes/es/app/views/devise/registrations/new.html.erb",
+		"/home/osboxes/es/db/seed.rb",
+		"/home/osboxes/es/app/controllers/roles_controller.rb",
+		"/home/osboxes/es/app/controllers/users_controller.rb",
+		"/home/osboxes/es/app/controllers/articulos_controller.rb",
+		"/home/osboxes/es/config/database.yml",
+		"/home/osboxes/es/config/environments/development.rb",
+		"/home/osboxes/es/config/migrate/20190510142326_remove_vat_applicable_from_einvoinces.rb",
+		"/home/osboxes/es/app/views/articulos/index.html.erb",
+		"/home/osboxes/es/app/models/user.rb",
+		"/home/osboxes/es/db/eyk_seeds.rb",
+		"/home/osboxes/es/Procfile",
+		"/home/osboxes/es/config.ru",
+		"/home/osboxes/es/config/environments/production.rb",
+		"/home/osboxes/es/config/routes.rb",
+		"/home/osboxes/es/app/views/devise/sessions/new.html.erb",
+		"/home/osboxes/Railsapps/practicas/mispracticas.rb"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Gemfile.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 365.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
