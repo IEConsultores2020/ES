@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
+gem 'bundler', '~> 2.0'
 
 #Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2', '>= 4.2.6.rc1'
+gem 'rails', '~> 5.2'
+
+#20220113
+gem 'railties', '~> 5.2.1.rc1'
 
 gem 'bootstrap-sass', '3.2.0.4'
 # Use sqlite3 as the database for Active Record
@@ -18,7 +22,10 @@ gem 'coffee-rails', '~> 4.1', '>= 4.1.1'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '~> 3.1', '>= 3.1.5'
+#20220113
+#gem 'jquery-rails', '~> 3.1', '>= 3.1.5'
+gem 'jquery-rails', '~> 4.1'
+
 
 gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 gem 'jquery_mobile_rails'
@@ -93,3 +100,4 @@ gem 'roo'
 
 gem 'roo-xls'
 gem 'googlecharts'
+gem 'bigdecimal', '1.4.2'

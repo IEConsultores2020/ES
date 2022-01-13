@@ -42,6 +42,6 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {:host => 'http://es.nanduchoes.ieconsultores.ey.io/'}
 
 
-  config.web_console.whitelisted_ips = '190.68.115.123'
+  #config.web_console.whitelisted_ips = '190.68.115.123'
 
 end
