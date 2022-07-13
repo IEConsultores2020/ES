@@ -1,6 +1,6 @@
 FROM engineyard/kontainers:ruby-2.6-v1.0.0
 
-# An example of installing commonly-used packages
+#*** An example of installing commonly-used packages
 RUN apt-get update && apt-get install -y imagemagick libsqlite3-dev
 
 # Configure the main working directory. This is the base

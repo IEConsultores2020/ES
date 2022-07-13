@@ -1,2 +1,5 @@
 ---
 BUNDLE_BIN: "bin"
+BUNDLE_BUILD__PG: "--with-pg-config=/bin/none"
+BUNDLE_PATH: "vendor/bundle"
+BUNDLE_WITHOUT: "production"
