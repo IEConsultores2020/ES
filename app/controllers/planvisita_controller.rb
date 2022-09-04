@@ -1,7 +1,7 @@
 class PlanvisitaController < ApplicationController
-  before_filter :authenticate_user!
-  before_filter :prepare_userassign
-  before_filter :prepare_puntoventumassign
+  before_action :authenticate_user!
+  before_action :prepare_userassign
+  before_action :prepare_puntoventumassign
   load_and_authorize_resource
 
   # GET /planvisita

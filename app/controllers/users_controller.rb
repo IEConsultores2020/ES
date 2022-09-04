@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_user! #2021
-  before_filter :authenticate_user!
+  before_action :authenticate_user!
   load_and_authorize_resource
 
   

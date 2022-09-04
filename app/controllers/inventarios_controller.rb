@@ -1,6 +1,6 @@
 class InventariosController < ApplicationController 
   layout false , except: [:index, :new, :show, :edit ]
-  before_filter :authenticate_user!
+  before_action :authenticate_user!
   load_and_authorize_resource
   skip_authorize_resource :only => [:imprimir_datos, :imprimir_codbarras, :download]  
 

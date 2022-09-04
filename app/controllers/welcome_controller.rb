@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   def index
   	respond_to do |format|
       format.html
-      format.mobile
+      #format.mobile
     end
   end
 end

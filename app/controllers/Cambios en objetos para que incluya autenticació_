@@ -37,7 +37,7 @@ belongs_to :user
    root to: "items#index"                    --PENDIENTE SI SE HACE SOLO UNA VEZ
 
 9. And add the following line to the top of ItemsController
-      before_filter :authenticate_user!
+      before_action :authenticate_user!
 
 10.Then, in the User model, we can add the missing association (app/models/user.rb):
 

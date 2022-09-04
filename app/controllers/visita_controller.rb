@@ -1,6 +1,6 @@
 class VisitaController < ApplicationController
-  before_filter :authenticate_user!
-  before_filter :prepare_planvisitumassign
+  before_action :authenticate_user!
+  before_action :prepare_planvisitumassign
   load_and_authorize_resource  
   
   

@@ -1,7 +1,7 @@
 class ArticulosController < ApplicationController
   before_action :authenticate_user!   #202106
   before_action :set_articulo, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_user! 
+  before_action :authenticate_user! 
   load_and_authorize_resource  
   skip_authorize_resource :only => [:show_inkardexes] 
 

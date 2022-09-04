@@ -12,9 +12,9 @@ default: &default
 
 development:
   <<: *default
-  database: nanducho_d
+  database: nanducho_es
   username: nanducho
-  password: nanducho
+  password: nanduchoes
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -22,15 +22,15 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: nanducho_d
+  database: nanducho_es
   username: nanducho
-  password: nanducho
+  password: nanduchoes
   host: localhost
 
 production:
   <<: *default
-  database: nanducho
+  database: nanducho_es
   username: nanducho
-  password: nanducho
+  password: nanduchoes
   host: localhost
 
