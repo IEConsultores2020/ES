@@ -1374,3 +1374,72 @@ Processing by WelcomeController#index as HTML
   Rendered layouts/_header.html.erb (10.1ms)
   Rendered layouts/_footer.html.erb (0.4ms)
 Completed 200 OK in 930ms (Views: 923.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/" for ::1 at 2022-09-03 19:23:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (169.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 2966ms (Views: 2880.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-03 19:24:55 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (80.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 942ms (Views: 755.8ms | ActiveRecord: 89.4ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-09-03 19:24:59 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L7aHNSD1BzkMgVSkg4OREE0gYowFCOM3eKoBzocO0hYv8eck1mN4mWlPWyNrC8l5kMYQRYAkbz63dTVCn7kQlg==", "user"=>{"email"=>"fernando_torres36@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (138.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "fernando_torres36@yahoo.com"]]
+Completed 401 Unauthorized in 157ms (ActiveRecord: 139.1ms)
+
+
+Started GET "/users" for ::1 at 2022-09-03 19:25:20 -0500
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-03 19:25:21 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 716ms (Views: 706.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-09-03 19:25:36 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EWxYmdXpG573V0o/bp3Lkblds4X//sqIYRxWRaCrW+8RKziII39kPpKZRbiGFZP4ZLvBTHrSRoGuw2LJuByZbw==", "user"=>{"email"=>"gerencia@nanducho.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (24.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "gerencia@nanducho.com"]]
+Completed 401 Unauthorized in 245ms (ActiveRecord: 24.0ms)
+
+
+Started GET "/" for ::1 at 2022-09-22 15:12:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (2.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 7769ms (Views: 7722.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-09-22 15:15:55 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (265.7ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1164ms (Views: 1035.5ms | ActiveRecord: 11.1ms)
