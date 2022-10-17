@@ -1,11 +1,15 @@
 source 'https://rubygems.org'
-gem 'bundler', '~> 2.0'
+#"gem 'bundler', '~> 1.3'
+gem 'bundler', '~> 1.17', '>= 1.17.3'
 
 #Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2'
+#gem 'rails', '~> 5.2'
+gem 'rails', '~> 4.2', '>= 4.2.11.3'
 
 #20220113
-gem 'railties', '~> 5.2.1.rc1'
+#gem 'railties', '~> 5.2.1.rc1'
+#20220805
+gem 'railties', '~> 4.2', '>= 4.2.11.3'
 
 gem 'bootstrap-sass', '3.2.0.4'
 # Use sqlite3 as the database for Active Record
@@ -71,7 +75,7 @@ group :development, :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'rails4-autocomplete'
 
@@ -82,6 +86,8 @@ gem 'therubyracer'
 gem 'cancancan', '~> 1.10'
 
 gem 'devise'
+#20220114
+gem 'milia'
 
 gem 'active_device'
 
@@ -100,4 +106,9 @@ gem 'roo'
 
 gem 'roo-xls'
 gem 'googlecharts'
-gem 'bigdecimal', '1.4.2'
+#gem 'bigdecimal', '1.4.2'
+gem 'bigdecimal', '~> 3.1', '>= 3.1.2'
+
+#2022 Generate documentation of the app
+gem "documentation-zero"
+gem 'bootsnap'
