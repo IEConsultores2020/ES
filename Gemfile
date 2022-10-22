@@ -58,7 +58,10 @@ gem 'RubyInline'
 gem 'thin'
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+ #gem 'bcrypt'
+ #gem 'bcrypt', '3.1.12'
+ #gem 'bcrypt', '~> 3.1.17'
+ #gem bcrypt -v '3.1.18' --source 'https://rubygems.org/'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
